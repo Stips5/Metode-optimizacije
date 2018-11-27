@@ -1,4 +1,5 @@
 """ created by stips on 14.11.18. using PyCharm , python_version = 3.5 """
+import time
 
 import pandas as panda
 
@@ -15,6 +16,8 @@ def zadatak1():
     except:
         print("File nije ucitan!")
         exit()
+
+    start = time.time()
 
     '''dobit zadnju godinu tj stupac'''
     lastYear = int(df.columns[-1])
@@ -35,4 +38,8 @@ def zadatak1():
 
     '''izbaci one koji nemaju podatke i spremi u file'''
     nf = panda.DataFrame(nf.dropna())
+
+    end = time.time()
+    print("Zadatak 1, vrijeme izvođenja", (end - start) * 1000, "ms")
+
     nf.to_csv("svaki_10ti_bez_Nan.csv")

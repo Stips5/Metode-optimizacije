@@ -1,5 +1,7 @@
 """ created by stips on 23.11.18. using PyCharm , python_version = 3.5 """
 import operator
+import os
+import time
 
 import pandas as panda
 
@@ -9,6 +11,9 @@ def zadatak3():
         te broji koliko puta je pao.'''
 
     df = panda.read_csv("svaki_10ti_bez_Nan.csv")
+
+    start = time.time()
+
     repeats = dict()
 
     for country in df.iterrows():       #Serial di su redci indeksirani ko godine
@@ -20,5 +25,14 @@ def zadatak3():
 
         repeats[country[1][1]] =+ cnt
 
-    for k, v in sorted(repeats.items(), key=operator.itemgetter(0)):
-        print(k, v)
+    end = time.time()
+    print("Zadatak 3, vrijeme izvođenja", (end-start) * 1000, "ms")
+
+    fileName = "padovi_drzava.txt"
+    file = open(fileName, "w+")
+
+    for k, v in sorted(repeats.items(), key=operator.itemgetter(1)):
+        # print(k, v)
+        file.write(str(k) + " " + str(v))
+        file.write("\n")
+    print("File saved as", os.getcwd() + "/" + fileName)
