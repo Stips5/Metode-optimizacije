@@ -1,201 +1,201 @@
-Solomon Islands 0
-Gambia 0
-Liberia 0
-Mozambique 0
-Bahrain 0
-Syria 0
-Maldives 0
-Bosnia and Herzegovina 0
-St. Lucia 0
-Slovenia 0
-Timor-Leste 0
-Sao Tome and Principe 0
-Singapore 0
-Malta 0
-Papua New Guinea 0
-Romania 0
-Australia 0
-Nigeria 0
-Mauritania 0
-Guinea-Bissau 0
-Equatorial Guinea 0
-New Zealand 0
-Ethiopia 0
-Chad 0
-Japan 0
-Uruguay 0
-Congo, Rep. 0
-Uganda 0
-Cambodia 0
-Lebanon 0
-Brazil 0
-Puerto Rico 0
-Dominican Republic 0
-Kuwait 0
-Ireland 0
-Estonia 0
-Micronesia, Fed. Sts. 0
-Kenya 0
-Burundi 0
-Nepal 0
-United Arab Emirates 0
-South Africa 0
-Switzerland 0
-Spain 0
-Belarus 0
-Saudi Arabia 0
-Moldova 0
-Turkey 0
-Tonga 0
-Bhutan 0
-Ukraine 0
-Brunei 0
-Western Sahara 0
-Trinidad and Tobago 0
-Virgin Islands (U.S.) 0
-Bulgaria 0
-Mayotte 0
-Guam 0
-Seychelles 0
-Qatar 0
-Taiwan 0
-Belgium 0
-Gabon 0
-Grenada 0
-Russia 0
-Barbados 0
-Myanmar 0
-Haiti 0
-Aruba 0
-Philippines 0
-Comoros 0
-Guatemala 0
-Thailand 0
 Indonesia 0
-Iraq 0
-Montenegro 0
-Angola 0
-Greece 0
-Colombia 0
-Paraguay 0
-Libya 0
-Greenland 0
-Congo, Dem. Rep. 0
-Ecuador 0
-Fiji 0
-Tunisia 0
-Croatia 0
-Madagascar 0
-Czech Republic 0
-Vietnam 0
-Egypt 0
-Guadeloupe 0
-West Bank and Gaza 0
-Oman 0
-Algeria 0
-Rwanda 0
-Malaysia 0
-Suriname 0
-Lao 0
 Niger 0
-Sudan 0
-Slovak Republic 0
-Sweden 0
-Yemen 0
-Austria 0
-Mongolia 0
-Netherlands Antilles 0
-Vanuatu 0
-Serbia 0
-Guyana 0
-Panama 0
-New Caledonia 0
-Antigua and Barbuda 0
-Chile 0
-Somalia 0
-Honduras 0
-French Polynesia 0
-Venezuela 0
-United States 0
-Latvia 0
+South Korea 0
+Togo 0
 Italy 0
 Benin 0
-Macao, China 0
+Bhutan 0
+Haiti 0
+Belgium 0
 Germany 0
-French Guiana 0
-Canada 0
-Peru 0
-Poland 0
-Macedonia, FYR 0
-Morocco 0
-Israel 0
-South Korea 0
-Reunion 0
+Kuwait 0
+Sudan 0
 Jordan 0
-El Salvador 0
-Djibouti 0
-Senegal 0
-Sierra Leone 0
-Martinique 0
-South Sudan 0
-St. Vincent and the Grenadines 0
-Iran 0
-Mexico 0
-Lithuania 0
-Jamaica 0
-Bolivia 0
+Vanuatu 0
+Austria 0
+Yemen 0
 Cote d'Ivoire 0
-Ghana 0
-China 0
-Mali 0
-North Korea 0
+Algeria 0
+Trinidad and Tobago 0
+Lithuania 0
+Albania 0
+Brazil 0
+Malawi 0
 Cyprus 0
-Eritrea 0
+Papua New Guinea 0
+South Africa 0
+Slovak Republic 0
+Saudi Arabia 0
+Estonia 0
+Cambodia 0
+China 0
+Vietnam 0
+Guinea-Bissau 0
+Congo, Dem. Rep. 0
+Taiwan 0
+Nepal 0
+Egypt 0
+Mozambique 0
+Uganda 0
+Seychelles 0
+Romania 0
+Angola 0
+Liberia 0
+Canada 0
+Western Sahara 0
+Spain 0
+Antigua and Barbuda 0
+Croatia 0
+Suriname 0
+Samoa 0
+Tonga 0
+Burundi 0
+St. Vincent and the Grenadines 0
+Micronesia, Fed. Sts. 0
+Greenland 0
+Puerto Rico 0
+Honduras 0
+Mali 0
+Ecuador 0
+Chad 0
+Macedonia, FYR 0
+Peru 0
+Guyana 0
+Guadeloupe 0
+Burkina Faso 0
+Timor-Leste 0
+Tanzania 0
+Qatar 0
+New Caledonia 0
+Serbia 0
+Syria 0
+Portugal 0
+Thailand 0
+Myanmar 0
+Congo, Rep. 0
+El Salvador 0
+Oman 0
+Senegal 0
+Iraq 0
+Panama 0
 Hong Kong, China 0
 Costa Rica 0
-Portugal 0
-Cape Verde 0
-Albania 0
-Sri Lanka 0
-Tanzania 0
-Samoa 0
-Togo 0
-Lesotho 0
-Kiribati 0
-Burkina Faso 0
+French Guiana 0
+Iran 0
+Tunisia 0
+Gambia 0
+Venezuela 0
+Lao 0
+Rwanda 0
+Malta 0
 Nicaragua 0
+Cape Verde 0
+Paraguay 0
+Israel 0
+United Arab Emirates 0
+Fiji 0
+United States 0
+Lebanon 0
+Barbados 0
+Eritrea 0
+Chile 0
+Sweden 0
+New Zealand 0
+St. Lucia 0
+Belarus 0
+Ukraine 0
+Ghana 0
+Reunion 0
+Kiribati 0
+Djibouti 0
+Czech Republic 0
+Brunei 0
+Aruba 0
+Gabon 0
+Japan 0
 Luxembourg 0
-Guinea 0
+Philippines 0
+Morocco 0
+Sierra Leone 0
+Macao, China 0
+Australia 0
+Kenya 0
+Somalia 0
+Madagascar 0
+Switzerland 0
+Bosnia and Herzegovina 0
+Guam 0
+Mongolia 0
+Dominican Republic 0
+Jamaica 0
+Mexico 0
+Equatorial Guinea 0
+Slovenia 0
+Poland 0
+Singapore 0
+Netherlands Antilles 0
+Bulgaria 0
+West Bank and Gaza 0
+Guatemala 0
+Mauritania 0
+French Polynesia 0
+Bahrain 0
+Ireland 0
 Bahamas 0
-Malawi 0
-Bangladesh 1
-Namibia 1
-Botswana 1
-Azerbaijan 1
-Cameroon 1
-Georgia 1
-United Kingdom 1
-Pakistan 1
-Zimbabwe 1
-France 1
-Netherlands 1
-Norway 1
+Libya 0
+Malaysia 0
+South Sudan 0
+Uruguay 0
+Lesotho 0
+Montenegro 0
+Colombia 0
+North Korea 0
+Bolivia 0
+Nigeria 0
+Moldova 0
+Maldives 0
+Guinea 0
+Russia 0
+Latvia 0
+Grenada 0
+Ethiopia 0
+Virgin Islands (U.S.) 0
+Comoros 0
+Martinique 0
+Turkey 0
+Greece 0
+Solomon Islands 0
+Mayotte 0
+Sri Lanka 0
+Sao Tome and Principe 0
 Uzbekistan 1
-Hungary 1
-Argentina 1
-Kazakhstan 1
-Denmark 1
-Central African Republic 1
-Zambia 1
-Cuba 1
-Belize 1
-Kyrgyz Republic 1
-Turkmenistan 1
-Swaziland 1
 Tajikistan 1
+Cuba 1
+Kyrgyz Republic 1
+Bangladesh 1
 Iceland 1
-Armenia 2
+Hungary 1
+Cameroon 1
+Argentina 1
+Zimbabwe 1
+Norway 1
+Netherlands 1
+Swaziland 1
+Denmark 1
+United Kingdom 1
+Botswana 1
+France 1
+Belize 1
+Azerbaijan 1
+Kazakhstan 1
+Namibia 1
+Central African Republic 1
+Pakistan 1
+Zambia 1
+Georgia 1
+Turkmenistan 1
 India 2
+Armenia 2
 Mauritius 3
 Finland 3
 Afghanistan 12
