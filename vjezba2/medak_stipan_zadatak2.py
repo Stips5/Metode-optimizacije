@@ -53,4 +53,3 @@ if __name__ == '__main__':
     print("Interativly swapped", iterativnaOkretaljka(lst, 1, 4))
     print("Recursivly swapped", rekurzivnaOkretaljkaNoSlice(lst, 1, 4))
     print("Recursivly slicley swapped", rekurzivnaOkretaljkaSlice(lst, 1, 4))
-

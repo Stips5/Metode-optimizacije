@@ -104,7 +104,7 @@ def provjeraStudenata(podatci):
         if podatci[i].vjezbe < 50:
             podatci[i].flag = 'NOOP'
         else:
-            podatci[i].flag = round(izracunajBrojBodova(podatci[i]),2)
+            podatci[i].flag = round(izracunajBrojBodova(podatci[i]), 2)
     return podatci
 
 def izracunajBrojBodova(student):
@@ -117,7 +117,4 @@ def izracunajBrojBodova(student):
         return 1
 
 if __name__ == '__main__':
-
     upisivanjeUFile(provjeraStudenata(ucitavanjeFilea()))
-
-
