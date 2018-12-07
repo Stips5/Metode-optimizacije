@@ -3,44 +3,79 @@
 # Napisati funkciju koja cita datoteku u kojoj je zapisan graf u pajek formatu i sprema podatke o
 # grafu u strukturu podataka po volji (matricu susjedstva, matricu incidencije ili listu susjedstva grafa).
 
+class MatricaSusjedstva:
+
+    def __init__(self, fileName):
+        self.graf = dict()
+        self.matrica = None
+        self.fileName = fileName
+        self.keywords = ("*Vertices", "*Arcs", "*Edges")
+
+        data = self.read(self.fileName)
+
+    def read(self, fileName):
+        vrhovi = dict()
+        edges = dict()
+        edgevi = list()
+        arcovi = list()
+
+        file = open(fileName, "r")
+        '''cita prvi red i gleda koliko ima tocaka
+        pa svaku tocku ucita'''
+
+    #arcs usmjereni , edge veza
+
+        file1 = open(fileName, "r")
+
+        for i, line in enumerate(file1):
+            print(i, line)
+
+        for row in file:
+            '''
+                provjerava jel red u fileu sa headerima da zna di ce spremat
+            '''
+
+            row = row.replace("\n", "")
+            if row.__contains__(self.keywords[0]):     #vrhovi
+                row = row.replace(self.keywords[0], "").replace(" ", "")
+                nRows = int(row)
+                row = next(file)
+                for i in range(nRows):
+                    splited = row.replace("\n", "").replace(" ", "").split('"')
+                    vrhovi[splited[1]] = splited[0]
+                    row = next(file)
+
+            elif row.__contains__(self.keywords[1]):   #lukovi
+                while True:
+                    row = next(file)
+                    if row.__contains__(self.keywords[2]):
+                        break
+                    else:
+                        arcovi.append(row.replace("\n", ""))
+            else:
+                while True:
+                    row = next(file, 0)
+                    if row == 0:
+                        break
+                    else:
+                        edgevi.append(row.replace("\n", ""))
+
+        print("spremljeno")
+
+        print("Vrhovi")
+        for k, v in vrhovi.items():
+            print(k, v)
+
+        print("Arcovi")
+        for i in arcovi:
+            print(i)
+
+        print("Edgevi")
+        for i in edgevi:
+            print(i)
+
 if __name__ == '__main__':
-    file = open("./euler.net.txt", "r")
+        # fileName = "euler.net.txt"
+        fileName = "football.net.txt"
 
-    vrhovi = dict()
-    edges = list()
-    graf = dict()
-
-    fVertices = [next(file) for x in range(6)]
-
-    del fVertices[0]
-    for i in fVertices:
-        i = i.replace(" ", "")
-        i = i.replace("\n", "")
-        vrhovi[i[0]] = i[2] + "\t"
-    print(vrhovi)
-
-    #pribaci iduca dva retka, file descriptor ili sta vec
-    next(file)
-    next(file)
-
-    fEdges = [next(file) for y in range(9, 17)]
-
-    for i in fEdges:
-        i = i.replace(" ", "")
-        i = i.replace("\n", "")
-        edges.append(i[0])
-        edges.append(i[1])
-
-    for k, v in vrhovi.items():
-        for lItem in range(len(edges) - 1):
-            if k == edges[lItem]:
-                # if edges[lItem] not in
-                    #gleda po vrhovima, ako vrh je povezan sa vrhon
-                vrhovi[k] += edges[lItem+1]
-                vrhovi[k+1] += edges[lItem]
-
-
-    print("spremljeno")
-
-    for k, v in vrhovi.items():
-        print(k, v)
+        MatricaSusjedstva(fileName)
