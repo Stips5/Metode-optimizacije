@@ -33,28 +33,27 @@ class MatricaSusjedstva:
             if row.__contains__(self.keywords[0]):     #vrhovi
                 row = row.replace(self.keywords[0], "").replace(" ", "")
                 nRows = int(row)
-                row = next(file)
-                for i in range(nRows):
+                cnt = 0
+                for row in file:
+                    cnt+=1
                     splited = row.replace("\n", "").replace(" ", "").split('"')
                     self.vrhovi[splited[1]] = int(splited[0])
-                    row = next(file)
+                    if cnt == nRows:
+                        break
 
             elif row.__contains__(self.keywords[1]):   #lukovi
-                while True:
-                    row = next(file)
+                for row in file:
                     if row.__contains__(self.keywords[2]):
                         break
-                    else:
-                        self.arcovi.append(row.replace("\n", ""))
+                    self.arcovi.append(row.replace("\n", ""))
             else:
-                while True:
-                    row = next(file, 0)
+                for row in file:
                     if row == 0:
                         break
-                    else:
+
                         # edgevi.append(row.replace("\n", ""))
-                        kae = [int(s) for s in row.split() if s.isdigit()]
-                        self.edges.append(kae[:2])
+                    kae = [int(s) for s in row.split() if s.isdigit()]
+                    self.edges.append(kae[:2])
 
         self.matrica = [[0 for x in range(len(self.vrhovi))] for y in range(len(self.vrhovi))]
 
