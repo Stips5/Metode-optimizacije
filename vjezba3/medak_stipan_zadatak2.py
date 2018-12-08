@@ -1,8 +1,6 @@
 """ created by stips on 23.11.18. using PyCharm , python_version = 3.5 """
 import time
-
 import pandas as panda
-
 
 def zadatak2(godina):
     '''
