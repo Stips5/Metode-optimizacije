@@ -11,7 +11,9 @@ if __name__ == '__main__':
     # fileName = "football.net.txt"
 
     # TODO
-    # prve iteracija u ucitavanju iz headera
+    # prve iteracija u ucitavanju iz headera iza prvog headera
+    # nije testirano za drugi file...
+    # eulerov test ?!?
 
     graf = Graf(fileName)
 
@@ -32,3 +34,5 @@ if __name__ == '__main__':
     print("stupanj vrhova", graf.getStupanjVrha())
 
     print("max br vrhova", graf.getVrhoviSaMaxIncidentnihBridova())
+
+    print("Ima li Eulerov put: ", 'Ima' if graf.hasEulersPath() else 'Nema')

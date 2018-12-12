@@ -50,6 +50,19 @@ class Graf:
 
         return maximusi
 
+    def hasEulersPath(self):
+        #Teorem: Konačan, neusmjeren i povezan graf je Eulerov ako i samo ako su su svi vrhovi parnog stupnja
+
+        if len(self.arcovi) != 0:   #graf je usmjeren, nema eulerov put
+            return False
+
+        # ako stupanj vrha nije paran, graf nema eulerov put
+        for k, v in self.getStupanjVrha().items():
+            if v%2 != 0:
+                return False
+
+        return True
+
     def read(self, fileName):
         file = open(fileName, "r")
 
@@ -58,6 +71,7 @@ class Graf:
         # arcs usmjereni , edge veza
 
         for row in file:
+            prevIterRowItem = row
             '''
                 provjerava jel red u fileu sa headerima da zna di ce spremat
             '''
@@ -77,6 +91,7 @@ class Graf:
             elif row.__contains__(self.keywords[1]):  # lukovi
                 for row in file:
                     if row.__contains__(self.keywords[2]):
+                        row = prevIterRowItem
                         break
                     self.arcovi.append(row.replace("\n", ""))
             else:
