@@ -3,23 +3,32 @@
 # Napisati funkciju koja cita datoteku u kojoj je zapisan graf u pajek formatu i sprema podatke o
 # grafu u strukturu podataka po volji (matricu susjedstva, matricu incidencije ili listu susjedstva grafa).
 
-from vjezba4.MatricaSusjedstva import MatricaSusjedstva
+from vjezba4.Graf import Graf
 
 if __name__ == '__main__':
-        fileName = "euler.net.txt"
-        # fileName = "football.net.txt"
 
-        ms = MatricaSusjedstva(fileName)
+    fileName = "euler.net.txt"
+    # fileName = "football.net.txt"
 
-        # print(len(ms.matrica[0]))
+    # TODO
+    # prve iteracija u ucitavanju iz headera
 
-        ms.print()
+    graf = Graf(fileName)
+
+    ms = graf.matricaSusjedstva
+    ms.print()
+
+    ls = graf.listSusjedstva
+    ls.print()
+
+    mi = graf.matricaIncidencije
+    mi.print()
 
 
-        ls = ms.convertToListaSusjedstva()
+    print("br bridova", graf.getBrojBridova())
 
-        ls.print()
+    print("br vrhova", graf.getBrojVrhova())
 
+    print("stupanj vrhova", graf.getStupanjVrha())
 
-        mi = ms.convertToMatricaIncidencije()
-        mi.print()
+    print("max br vrhova", graf.getVrhoviSaMaxIncidentnihBridova())
