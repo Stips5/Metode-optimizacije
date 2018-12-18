@@ -92,7 +92,6 @@ class Graf:
             kae = [int(s) for s in row.split() if s.isdigit()]
             self.neusmjVeze.append(kae[:2])
 
-
     def read(self, fileName):
 
         file = open(fileName, "r")

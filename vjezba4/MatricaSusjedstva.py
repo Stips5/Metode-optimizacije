@@ -12,10 +12,18 @@ class MatricaSusjedstva:
         self.matrica = self.initMatrix()
 
         '''idi po stupcima i dodaj redke iz uredenog para'''
-        for e in self.edges:
-            i1, i2 = e[0], e[1]
-            self.matrica[i1 - 1][i2 - 1] += 1
-            self.matrica[i2 - 1][i1 - 1] += 1
+
+        if len(self.edges) != 0:
+            for e in self.edges:
+                i1, i2 = e[0], e[1]
+                self.matrica[i1 - 1][i2 - 1] += 1
+                self.matrica[i2 - 1][i1 - 1] += 1
+        else:
+            for a in self.arcs:
+                i1, i2 = a[0], a[1]
+                self.matrica[i1 - 1][i2 - 1] += 1
+                self.matrica[i2 - 1][i1 - 1] += 1
+
 
     def initMatrix(self):
         return [[0 for x in range(len(self.vrhovi))] for y in range(len(self.vrhovi))]
@@ -36,19 +44,28 @@ class MatricaSusjedstva:
         return ls
 
     def convertToMatricaIncidencije(self):
-        mi = MatricaIncidencije(self.vrhovi, self.edges)
+        mi = MatricaIncidencije(self.vrhovi, self.edges, self.arcs)
+
+        leng = len(mi.matrica[0])
 
         '''stupac po stupac gleda i one edgeve koje ima doda'''
-        for e in range(len(self.edges)):
-            e1, e2 = self.edges[e][0], self.edges[e][1]
-            mi.matrica[e1-1][e] += 1
-            mi.matrica[e2-1][e] += 1
+
+        if len(self.edges) != 0:
+            for e in range(len(self.edges)):
+                e1, e2 = self.edges[e][0], self.edges[e][1]
+                mi.matrica[e1-1][e] += 1
+                mi.matrica[e2-1][e] += 1
+        else:
+            for a in range(len(self.arcs)):
+                a1, a2 = self.arcs[a][0], self.arcs[a][1]
+                mi.matrica[a1-1][a] += 1
+                mi.matrica[a2-1][a] += 1
 
         return mi
 
     def print(self):
         print("\nMatrica susjedstva")
-        for r in range(5):
-            for c in range(5):
+        for r in range(len(self.vrhovi)):
+            for c in range(len(self.vrhovi)):
                 print(self.matrica[r][c], end=" ")
             print()
