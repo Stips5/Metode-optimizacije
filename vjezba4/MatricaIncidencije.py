@@ -4,7 +4,10 @@ class MatricaIncidencije:
     def __init__(self, vrhovi, edgevi):
         self.vrh = vrhovi
         self.edg = edgevi
-        self.matrica = [[0 for x in range(len(edgevi))] for y in range(len(vrhovi))]
+        self.matrica = self.initMatrix()
+
+    def initMatrix(self):
+        return [[0 for x in range(len(self.edg))] for y in range(len(self.vrh))]
 
     def print(self):
 

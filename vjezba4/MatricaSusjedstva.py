@@ -5,10 +5,20 @@ from vjezba4.ListaSusjedstva import ListaSusjedstva
 
 class MatricaSusjedstva:
 
-    def __init__(self, vrhovi, edges, matrica):
+    def __init__(self, vrhovi, edges, arcs):
         self.vrhovi = vrhovi
         self.edges = edges
-        self.matrica = matrica
+        self.arcs = arcs
+        self.matrica = self.initMatrix()
+
+        '''idi po stupcima i dodaj redke iz uredenog para'''
+        for e in self.edges:
+            i1, i2 = e[0], e[1]
+            self.matrica[i1 - 1][i2 - 1] += 1
+            self.matrica[i2 - 1][i1 - 1] += 1
+
+    def initMatrix(self):
+        return [[0 for x in range(len(self.vrhovi))] for y in range(len(self.vrhovi))]
 
     def convertToListaSusjedstva(self):
         ls = ListaSusjedstva()
@@ -28,6 +38,7 @@ class MatricaSusjedstva:
     def convertToMatricaIncidencije(self):
         mi = MatricaIncidencije(self.vrhovi, self.edges)
 
+        '''stupac po stupac gleda i one edgeve koje ima doda'''
         for e in range(len(self.edges)):
             e1, e2 = self.edges[e][0], self.edges[e][1]
             mi.matrica[e1-1][e] += 1

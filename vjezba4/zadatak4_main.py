@@ -7,14 +7,14 @@ from vjezba4.Graf import Graf
 
 if __name__ == '__main__':
 
-    fileName = "euler.net.txt"
-    # fileName = "football.net.txt"
+    # fileName = "euler.net.txt"
+    fileName = "football.net.txt"
 
     # TODO
-    # prve iteracija u ucitavanju iz headera iza prvog headera
     # nije testirano za drugi file...
     # eulerov test ?!?
 
+    #učitavanje filea u graf
     graf = Graf(fileName)
 
     ms = graf.matricaSusjedstva

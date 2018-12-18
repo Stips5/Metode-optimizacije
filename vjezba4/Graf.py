@@ -5,28 +5,29 @@ from vjezba4.MatricaSusjedstva import *
 class Graf:
 
     def __init__(self, fileName):
-        self.graf = dict()
-        self.matrica = None
         self.fileName = fileName
         self.keywords = ("*Vertices", "*Arcs", "*Edges")
         self.vrhovi = dict()
-        self.edges = list()
-        self.arcovi = list()
+        self.neusmjVeze = list()
+        self.usmjVeze = list()
 
         self.read(fileName)
 
-        self.matricaSusjedstva = MatricaSusjedstva(self.vrhovi, self.edges, self.matrica)
+        self.matricaSusjedstva = MatricaSusjedstva(self.vrhovi, self.neusmjVeze, self.usmjVeze)
         self.matricaIncidencije = self.matricaSusjedstva.convertToMatricaIncidencije()
         self.listSusjedstva = self.matricaSusjedstva.convertToListaSusjedstva()
 
 
     def getBrojVrhova(self):
+        '''redci u matrici incidencije su vrhovi'''
         return len(self.matricaIncidencije.matrica)
 
     def getBrojBridova(self):
+        '''bridovi u matrici incidencije su stupci'''
         return len(self.matricaIncidencije.matrica[0])
 
     def getStupanjVrha(self):
+        '''broj value elemenata liste susjedstva'''
         stupnjeviVrhova = dict()
 
         for k, v in self.listSusjedstva.lista.items():
@@ -34,6 +35,7 @@ class Graf:
         return stupnjeviVrhova
 
     def getVrhoviSaMaxIncidentnihBridova(self):
+        '''trazi najduzi valeu iz matrice susjeda'''
         maximusi = dict()
 
         maxi = -1
@@ -51,62 +53,70 @@ class Graf:
         return maximusi
 
     def hasEulersPath(self):
-        #Teorem: Konačan, neusmjeren i povezan graf je Eulerov ako i samo ako su su svi vrhovi parnog stupnja
+        '''Teorem: Konačan, neusmjeren i povezan graf je Eulerov ako i samo ako su su svi vrhovi parnog stupnja'''
 
-        if len(self.arcovi) != 0:   #graf je usmjeren, nema eulerov put
+        if len(self.usmjVeze) != 0:   #graf je usmjeren, nema eulerov put
             return False
 
-        # ako stupanj vrha nije paran, graf nema eulerov put
+        '''ako stupanj vrha nije paran, graf nema eulerov put'''
         for k, v in self.getStupanjVrha().items():
             if v%2 != 0:
                 return False
 
         return True
 
+    def readVrhovi(self, file, n):
+        cnt = 0
+        for row in file:
+            cnt += 1
+            splited = row.replace("\n", "").replace(" ", "").split('"')
+            self.vrhovi[splited[1]] = int(splited[0])
+            if cnt == n:
+                break
+
+    def readUsmjVeze(self, file):
+        for row in file:
+            if row.__contains__(self.keywords[2]):
+                return row
+            kae = [int(s) for s in row.split() if s.isdigit()]
+            self.usmjVeze.append([kae[0], kae[1]])
+
+    def readNeusmjVeze(self, file):
+        for row in file:
+            row = row.strip("\n")
+            if row == "":
+                return row
+
+                # edgevi.append(row.replace("\n", ""))
+            '''izdvoji brojeve iz stringa i spremi u listu'''
+            kae = [int(s) for s in row.split() if s.isdigit()]
+            self.neusmjVeze.append(kae[:2])
+
+
     def read(self, fileName):
+
         file = open(fileName, "r")
 
         '''cita prvi red i gleda koliko ima tocaka pa svaku tocku ucita'''
 
         # arcs usmjereni , edge veza
 
-        for row in file:
-            prevIterRowItem = row
-            '''
-                provjerava jel red u fileu sa headerima da zna di ce spremat
-            '''
+        row = file.readline()
+        while row != '':
+            row = row.strip("\n")
 
-            row = row.replace("\n", "")
+            '''provjerava jel red u fileu sa headerima da zna di ce spremat'''
+
             if row.__contains__(self.keywords[0]):  # vrhovi
-                row = row.replace(self.keywords[0], "").replace(" ", "")
-                nRows = int(row)
-                cnt = 0
-                for row in file:
-                    cnt += 1
-                    splited = row.replace("\n", "").replace(" ", "").split('"')
-                    self.vrhovi[splited[1]] = int(splited[0])
-                    if cnt == nRows:
-                        break
-
-            elif row.__contains__(self.keywords[1]):  # lukovi
-                for row in file:
-                    if row.__contains__(self.keywords[2]):
-                        row = prevIterRowItem
-                        break
-                    self.arcovi.append(row.replace("\n", ""))
+                n = row.replace(self.keywords[0], "").replace(" ", "")
+                self.readVrhovi(file, int(n))
+                row = file.readline()
+            elif row.__contains__(self.keywords[1]):  # usmjerene veze
+                row.replace(self.keywords[1], "").replace(" ", "")
+                row = self.readUsmjVeze(file)
             else:
-                for row in file:
-                    if row == 0:
-                        break
+                row.replace(self.keywords[2], "").replace(" ", "")
+                self.readNeusmjVeze(file)
+                row = file.readline()
 
-                        # edgevi.append(row.replace("\n", ""))
-                    kae = [int(s) for s in row.split() if s.isdigit()]
-                    self.edges.append(kae[:2])
-
-        self.matrica = [[0 for x in range(len(self.vrhovi))] for y in range(len(self.vrhovi))]
-
-        for e in self.edges:
-            i1, i2 = e[0], e[1]
-            self.matrica[i1 - 1][i2 - 1] += 1
-            self.matrica[i2 - 1][i1 - 1] += 1
 
