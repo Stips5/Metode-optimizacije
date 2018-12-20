@@ -17,7 +17,6 @@ class Graf:
         self.matricaIncidencije = self.matricaSusjedstva.convertToMatricaIncidencije()
         self.listSusjedstva = self.matricaSusjedstva.convertToListaSusjedstva()
 
-
     def getBrojVrhova(self):
         '''redci u matrici incidencije su vrhovi'''
         return len(self.matricaIncidencije.matrica)

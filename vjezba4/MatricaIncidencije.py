@@ -13,7 +13,6 @@ class MatricaIncidencije:
         else:
             return [[0 for x in range(len(self.arc))] for y in range(len(self.vrh))]
 
-
     def print(self):
 
         print("\nMatrica incidencije")

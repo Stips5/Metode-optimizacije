@@ -46,8 +46,6 @@ class MatricaSusjedstva:
     def convertToMatricaIncidencije(self):
         mi = MatricaIncidencije(self.vrhovi, self.edges, self.arcs)
 
-        leng = len(mi.matrica[0])
-
         '''stupac po stupac gleda i one edgeve koje ima doda'''
 
         if len(self.edges) != 0:

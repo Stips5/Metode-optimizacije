@@ -7,11 +7,10 @@ from vjezba4.Graf import Graf
 
 if __name__ == '__main__':
 
-    # fileName = "euler.net.txt"
-    fileName = "football.net.txt"
+    fileName = "euler.net.txt"
+    # fileName = "football.net.txt"
 
     # TODO
-    # nije testirano za drugi file...
     # eulerov test ?!?
 
     #učitavanje filea u graf
