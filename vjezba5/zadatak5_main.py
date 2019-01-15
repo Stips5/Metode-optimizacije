@@ -8,24 +8,13 @@
 # Dan je dataset movies.txt. Koristeci breath-first search napisati program u kojem ce se za unesenog glumca ili glumicu
 # pronaci Baconov broj i ispisati putanja kojom je povezan/a sa Kevin Baconom.
 
-#TODO
-# iman vrhove, triba provjerit sve vrhove koji imaju isti film i to je veza
 import collections
-import operator
 
-from vjezba5.myBFS import iterative_bfs as myBFS
+def readData(fileName):
 
-if __name__ == '__main__':
-
-    fileName = "movies.txt"
     fileData = open(fileName, "r")
-
     filmGlumac = dict()
     sviGlumci = list()
-
-    listaSusjedstva = dict()
-
-    graf = dict()
 
     for i in fileData:
 
@@ -50,25 +39,58 @@ if __name__ == '__main__':
     # for k, v in filmGlumac.items():
     #     print("key", k, " ||| value", v)
 
-    #inicijalizacija
+    return filmGlumac, sviGlumci
+
+def getListaSusjedstva(sviGlumci, filmGlumac):
+
+    listaSusjedstva = dict()
+
+    # inicijalizacija
     for g in sviGlumci:
         listaSusjedstva[g] = None
 
-    #iterira kroz glumce koji glume u filnu i dodaje ih u listu susjedstva
-    for k, v in filmGlumac.items():      # k = filmovi , v = glumci
+    # iterira kroz glumce koji glume u filnu i dodaje ih u listu susjedstva
+    for k, v in filmGlumac.items():  # k = filmovi , v = glumci
         for glumac in v:
             tmp = list(v)
             tmp.remove(glumac)
 
             old = listaSusjedstva[glumac]
-            if old == None: #ako je prazan value dodaj glumce
+            if old == None:  # ako je prazan value dodaj glumce
                 listaSusjedstva[glumac] = tmp
-            else:           #ako vec ima glumaca, dodaj na postojece
+            else:  # ako vec ima glumaca, dodaj na postojece
                 # new = old.extend(tmp)
                 listaSusjedstva.setdefault(glumac, []).extend(tmp)
 
+    return listaSusjedstva
 
-            #triba nandodat na vec postojece podatke
+def findPath(graph, end):
+    from collections import deque
+    q = deque([["Kevin Bacon"]])
+
+    while q:
+        path = q.popleft()
+
+        v = path[-1]
+        if v == end:
+            return path, len(path)-1
+
+        childrens = []
+        for i in graph[v]:
+            childrens.append(i)
+
+        for child in childrens:
+            nwPath = list(path)
+            nwPath.append(child)
+            q.append(nwPath)
+
+    return None, -1
+
+
+if __name__ == '__main__':
+
+    filmGlumac, sviGlumci = readData("movies.txt")
+    listaSusjedstva = getListaSusjedstva(sviGlumci, filmGlumac)
 
     print("")
 
@@ -76,13 +98,13 @@ if __name__ == '__main__':
     # for k, v in listaSusjedstva.items():
     #     print(k, v)
     #
-    # actors, baconNum = myBFS(listaSusjedstva,  "Kevin Bacon")
+    # actors, baconNum = findPath(listaSusjedstva,  "Kevin Bacon")
     # print("Actors", actors, "Bacons number", baconNum)
     #
-    actors, baconNum = myBFS(listaSusjedstva,  "Brad Pitt")
+    actors, baconNum = findPath(listaSusjedstva,  "Brad Pitt")
     # print("Actors", actors, "Bacons number", baconNum)
 
-    # actors, baconNum = myBFS(listaSusjedstva, "Z. Zakowsky")
+    # actors, baconNum = findPath(listaSusjedstva, "Z. Zakowsky")
     if actors == None:
         print("No connection")
 
@@ -95,8 +117,6 @@ if __name__ == '__main__':
             for f, g in filmGlumac.items():
                 if(g.__contains__(actors[i]) and g.__contains__(actors[i+1])):
                     print(actors[i] , "->", f, "->", actors[i+1])
-
-
         print()
 
         print("Actors", actors, "Bacons number", baconNum)
