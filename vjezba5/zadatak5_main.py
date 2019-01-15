@@ -75,32 +75,28 @@ if __name__ == '__main__':
     listaSusjedstva = collections.OrderedDict(sorted(listaSusjedstva.items()))
     # for k, v in listaSusjedstva.items():
     #     print(k, v)
-
-    actors, baconNum = myBFS(listaSusjedstva,  "Kevin Bacon")
-    print("Actors", actors, "Bacons number", baconNum)
-
-    actors, baconNum = myBFS(listaSusjedstva,  "Brad Pitt")
-    print("Actors", actors, "Bacons number", baconNum)
-
-    # actors, baconNum =  myBFS(listaSusjedstva, "Nicolas Cage")
+    #
+    # actors, baconNum = myBFS(listaSusjedstva,  "Kevin Bacon")
     # print("Actors", actors, "Bacons number", baconNum)
     #
-    # actors, baconNum = myBFS(listaSusjedstva, "Diane Lane")
+    actors, baconNum = myBFS(listaSusjedstva,  "Brad Pitt")
     # print("Actors", actors, "Bacons number", baconNum)
 
-#<class 'list'>: ['Zoia Karabanova', 'William Challee']
+    # actors, baconNum = myBFS(listaSusjedstva, "Z. Zakowsky")
+    if actors == None:
+        print("No connection")
 
-    print()
+    else:
+        print()
 
-    cntEdges = 0
+        cntEdges = 0
 
-    for i in range(len(actors)-1):
-        for f, g in filmGlumac.items():
-            g.__contains__(actors[i]) and g.__contains__(actors[i+1])
-            print(actors[i] , "->", f, "->", actors[i+1])
-            cntEdges+=1
+        for i in range(len(actors)-1):
+            for f, g in filmGlumac.items():
+                if(g.__contains__(actors[i]) and g.__contains__(actors[i+1])):
+                    print(actors[i] , "->", f, "->", actors[i+1])
 
 
-    print()
+        print()
 
-    print("Actors", actors, "Bacons number", baconNum, "number of edges ", cntEdges)
+        print("Actors", actors, "Bacons number", baconNum)
