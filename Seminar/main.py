@@ -1,67 +1,61 @@
 """ created by stips on 14.01.19. using PyCharm , python_version = 3.5 """
+from collections import deque
 
-from Seminar.Edge import Edge
+from Seminar.Edge import *
 
-#radi
-def initMatricaUdaljenosti(n):
-    matricaUdaljenosti = [[float('inf') for x in range(n)]for x in range(n)]
+"""
+Spanning        
+    https://community.topcoder.com/stat?c=problem_statement&pm=3099
 
-    for i in range(n):
-        matricaUdaljenosti[i][i] = 0
+Given a connected graph with nodes nodes, where each edge is undirected and has both a length and a cost, 
+your task is to pick a subset of the edges such that the graph is still connected, 
+the minimum distance between each pair of nodes is less than or equal to threshold, and the total cost is minimized. 
+You should return this minimum cost. The graph will be given as a String[], g, each element of which represents an edge in the form "u v length cost", 
+where u and v are the zero-based indices of the two nodes connected by this edge. For example, consider the following input:
 
-    return matricaUdaljenosti
+nodes = 3
+threshold = 5
+g = {"0 1 4 1","0 2 3 2","1 2 1 4"}
 
-#radi
-def putUdaljenostiUMatricuUdaljenosti(matricaUdaljenost, listaEdgeva):
-    for e in listaEdgeva:
-        n1, n2 = int(e.node1), int(e.node2)
-        matricaUdaljenost[n1][n2], matricaUdaljenost[n2][n1] = e.length, e.length
-    return matricaUdaljenost
+If we select the first and second edges, then the distance between nodes 1 and 2 ends up being 7, greater than our threshold. 
+However, if we pick the first and third edges, the distance between all pairs of nodes is 5 or less, 
+and the cost is minimized (picking the second and third edges would cost more). Thus, we return the cost of these two edges, 5.
 
-#radi
-def ispisMatriceUdaljenosti(numOfNodes, matricaUdaljenosti):
-    for i in range(numOfNodes):
-        for j in range(numOfNodes):
-            print(matricaUdaljenosti[i][j], end=" ")
-        print()
+Constraints
+-	g will contain between 1 and 18 elements, inclusive.
+-	nodes will be between 2 and 10, inclusive.
+-	threshold will be between 1 and 1000, inclusive.
+-	Each element of g will be formatted as "u v length cost", where u, v, length and cost are all integers with no extra leading zeros.
+-	Each u and v will be between 0 and nodes-1, inclusive.
+-	Each length and cost will be between 1 and 100, inclusive.
+-	No two elements of g will refer to edges between the same pair of nodes.
+-	In each element of g, u will not equal v.
+-	If you use all of the edges, the graph will be connected, and the minimum distance between each pair of nodes will be less than or equal to threshold.
+"""
 
-def findCheapestPath(graph, numOfNodes, threshold):
-    listaEdgeva = readData(graph)
-    matricaUdaljenosti = initMatricaUdaljenosti(numOfNodes)
+from operator import attrgetter
 
-    for i in listaEdgeva:
-        print(i)
+def getListOfNodes(listaEdgeObje):
+    listaNodeova = list()
 
-        if int(i.length) > threshold:
-            print(i, "removed, its grater than threshold")
-            listaEdgeva.remove(i)
+    for e in listaEdgeObje:
+        n1, n2 = e.node1, e.node2
 
-    print()
-    listNodeova = getListOfNodes(listaEdgeva)
-    print("Nodes")
-    print(listNodeova)
+        if n1 not in listaNodeova:
+            listaNodeova.append(n1)
+        if n2 not in listaNodeova:
+            listaNodeova.append(n2)
 
-    print()
-    print("Lista susjedstva")
-    listaSusjedstva = makeListSusjedstva(listNodeova, listaEdgeva)
+    return listaNodeova
 
-    for k, v in listaSusjedstva.items():
-        print(k, v)
-
-    print()
-    print("matrica udaljenosti")
-
-    matricaUdaljenosti = putUdaljenostiUMatricuUdaljenosti(matricaUdaljenosti, listaEdgeva)
-    ispisMatriceUdaljenosti(numOfNodes, matricaUdaljenosti)
-
-#radi
-def makeListSusjedstva(vrhovi, edgevi):
+def makeListSusjedstva(edgeObjectList):
     listaSusjedstva = dict()
+    vrhovi = getListOfNodes(edgeObjectList)
 
     for i in vrhovi:
         listaSusjedstva[i] = []
 
-    for e in edgevi:
+    for e in edgeObjectList:
         n1, n2 = e.node1, e.node2
 
         if n2 not in listaSusjedstva[n1]:
@@ -69,20 +63,7 @@ def makeListSusjedstva(vrhovi, edgevi):
         if n1 not in listaSusjedstva[n2]:
             listaSusjedstva[n2].append(n1)
 
-
     return listaSusjedstva
-
-def getListOfNodes(l):
-    listaN = list()
-
-    for i in l:
-        if listaN.__contains__(i.node1):  pass
-        else:   listaN.append(i.node1)
-
-        if listaN.__contains__(i.node2):  pass
-        else:   listaN.append(i.node2)
-
-    return listaN
 
 def readData(input):
     listOfEdges = list()
@@ -94,30 +75,188 @@ def readData(input):
 
     return listOfEdges
 
+def isCircle(graph, start_point):
+    if graph.__len__() == 0:
+        return False
+
+    queue = [start_point]
+    visited = set()
+    visited.add(queue[0])
+    while queue:
+        from_point = queue.pop(0)  # BFS
+        # from_point=queue.pop() #DFS
+        for to_point in graph[from_point]:
+            if to_point in visited:
+                return True
+            else:
+                queue.append(to_point)
+                visited.add(to_point)
+            graph[to_point].remove(from_point)
+    return False
+
+def pathPrint(path):
+    print("Graph edges")
+    for i in path:
+        print(i.node1, i.node2)
+    print()
+
+def iterative_bfs(graph, start, path=[]):
+    '''iterative breadth first search from start'''
+    q = deque(start)
+    while q:
+        v = q.popleft()
+        path.append(v)
+        q.extend(w for w in graph[v] if w not in q and w not in path)
+        print(q, path)
+
+    return path
+
+def isOver(graph, numNodes):
+    if graph.__len__() < 1:
+        return False
+
+    path = iterative_bfs(makeListSusjedstva(graph), '0')
+
+    if path.__len__() == numNodes:
+        return True
+    else:
+        return False
+
+def kruskov(data, numOfNode, threshold):
+
+    listOfEdgeObjects = readData(data)
+    novaListaEdgeObjekata = list()
+    graf = dict()
+
+    listOfEdgeObjects.sort(key=attrgetter('length'))  #sort by length
+    listOfEdgeObjects.sort(key=attrgetter('cost'))  # sort by cost
+
+    for edge in listOfEdgeObjects:
+        # if isMTS(graf, numOfNode):        #brojat visited i vidit jel odgovara broju nodeova
+        if isOver(graf, numOfNode):
+            break
+
+        #dodaj u novu listu
+        novaListaEdgeObjekata.append(edge)
+
+        #provjeri je li napravilo krug
+        isCirc = isCircle(makeListSusjedstva(novaListaEdgeObjekata), listOfEdgeObjects[0].node1)
+        if isCirc:
+            novaListaEdgeObjekata.pop()
+
+        #dohvati zadnja dva elemeta
+        if novaListaEdgeObjekata.__len__() > 1:
+            previous = novaListaEdgeObjekata[-2]
+            last = novaListaEdgeObjekata[-1]
+            connectedLen = int(previous.length) + int(last.length)
+            if connectedLen > threshold:
+                novaListaEdgeObjekata.remove(last)
+
+    sum = 0
+    for e in novaListaEdgeObjekata:
+        sum += int(e.cost)
+
+    return novaListaEdgeObjekata, sum
+
+#krushow length
+def kruskovL(data, numOfNode, threshold):
+
+    # nodeGroups = list()
+    listOfEdgeObjects = readData(data)
+    novaListaEdgeObjekata = list()
+    graf = dict()
+
+    listOfEdgeObjects.sort(key=attrgetter('length'))  #sort by length
+
+    for edge in listOfEdgeObjects:
+        if isMTS(graf, numOfNode):        #brojat visited i vidit jel odgovara broju nodeova
+            break
+        isCirc = isCircle(makeListSusjedstva(novaListaEdgeObjekata), listOfEdgeObjects[0].node1)
+        if not isCirc:
+            novaListaEdgeObjekata.append(Edge(edge.node1, edge.node2, edge.length, edge.cost))
+
+            if novaListaEdgeObjekata.__len__() > 1:
+                previous = novaListaEdgeObjekata[-2]
+                last = novaListaEdgeObjekata[-1]
+
+                if (int(previous.length) + int(last.length)) > threshold:
+                    novaListaEdgeObjekata.pop(-1)
+
+    sum = 0
+    for e in novaListaEdgeObjekata:
+        sum += int(e.cost)
+
+    return graf, sum
+
+def isMTS(graf, numOfNodes):
+    #test bfs, get all nodes and get path and see does path contains all modes
+
+    if numOfNodes-1 == graf.__len__():
+        return True
+    return False
+
+def test1():
+    cnt = 0
+
+    print()
+    print("test sample ", "\n", "0 1 4 1", "\n","0 2 3 2","\n","1 2 1 4")
+    graf, cost = kruskov(["0 1 4 1","0 2 3 2","1 2 1 4"], 3, 5)
+    pathPrint(graf)
+    if cost == 5:
+        print("Ok")
+        cnt += 1
+    else:
+        print("Error, expected result is 5 not ", cost)
+
+    print()
+    print("test sample ",  "\n","2 3 7 1", "\n", "3 1 9 1", "\n", "1 0 8 1", "\n", "3 0 1 5",  "\n","1 2 5 7",  "\n","0 2 8 4")
+    graf, cost = kruskov(["2 3 7 1","3 1 9 1","1 0 8 1","3 0 1 5","1 2 5 7","0 2 8 4"], 4, 1000)
+    pathPrint(graf)
+    if cost == 3:
+        print("Ok")
+        cnt += 1
+    else:
+        print("Error, expected result is 3 not ", cost)
+
+    print()
+    print("test sample", "\n", "2 3 7 1",  "\n","3 1 9 1",  "\n","1 0 8 1",  "\n","3 0 1 5", "\n", "1 2 5 7",  "\n","0 2 8 4")
+    graf, cost = kruskov(["2 3 7 1", "3 1 9 1", "1 0 8 1", "3 0 1 5", "1 2 5 7", "0 2 8 4"], 4, 10)
+    pathPrint(graf)
+    if cost == 14:
+        print("Ok")
+        cnt += 1
+    else:
+        print("Error, expected result is 14 not ", cost)
+
+    print()
+    print("test sample", "0 1 5 5")
+    graf, cost = kruskov(["0 1 5 5"], 2, 100)
+    pathPrint(graf)
+    if cost == 5:
+        print("Ok")
+        cnt += 1
+    else:
+        print("Error, expected result is 5 not ", cost)
+
+
+
+    print()
+    print(cnt / 4, "%")
+
+def debug():
+    print()
+    print("test sample", "\n", "2 3 7 1", "\n", "3 1 9 1", "\n", "1 0 8 1", "\n", "3 0 1 5", "\n", "1 2 5 7", "\n", "0 2 8 4")
+    graf, cost = kruskov(["2 3 7 1", "3 1 9 1", "1 0 8 1", "3 0 1 5", "1 2 5 7", "0 2 8 4"], 4, 10)
+    pathPrint(graf)
+    if cost == 14:
+        print("Ok")
+    else:
+        print("Error, expected result is 14 not ", cost)
+
 if __name__ == '__main__':
 
-    # cost = findCheapestPath(["0 1 5 5"], 2, 100)
-    # if cost == 5: print("Ok")
-    # else:   print("Error, expected result is 5")
-
-    cost = findCheapestPath(["0 1 4 1", "0 2 3 2", "1 2 1 4"], 3, 5)
-    # if cost == 5: print("Ok")
-    # else:   print("Error, expected result is 5")
-
-    # cost = findCheapestPath(["2 3 7 1", "3 1 9 1", "1 0 8 1", "3 0 1 5", "1 2 5 7", "0 2 8 4"], 4, 1000)
-    # if cost == 3: print("Ok")
-    # else:   print("Error, expected result is 3")
-
-    # cost = findCheapestPath(["2 3 7 1", "3 1 9 1", "1 0 8 1", "3 0 1 5", "1 2 5 7", "0 2 8 4"], 4, 10)
-    # if cost == 14: print("Ok")
-    # else:   print("Error, expected result is 14")
-
-    # cost = findCheapestPath(["6 8 19 19", "1 3 98 75", "6 7 60 91", "4 6 89 53", "2 7 84 100", "9 5 31 65", "8 7 51 80", "1 4 78 94", "9 3 68 43", "7 0 20 77", "4 7 89 20", "4 2 82 21", "8 0 30 36", "8 3 44 100", "1 8 41 56", "8 2 27 66", "7 5 50 3", "9 7 45 71"g, 10, 190)
-    # if cost == 442: print("Ok")
-    # else:   print("Error, expected result is 442")
-
-    # cost = findCheapestPath(["0 1 1 100", "1 2 1 1", "2 3 1 1", "3 4 1 1", "4 5 1 1", "5 6 1 1", "6 7 1 1", "5 8 1 1", "5 9 1 1", "1 3 1 1","1 4 1 1", "3 9 1 1", "2 8 1 1", "2 5 1 1", "2 4 1 1", "7 9 1 1", "6 8 1 1", "6 9 1 1"],10,100)
-    # if cost == 108: print("Ok")
-    # else:   print("Error, expected result is 108")
-
+    # ls = readData(["2 3 7 1", "3 1 9 1", "1 0 8 1", "3 0 1 5", "1 2 5 7"])
+    # print(iterative_bfs(makeListSusjedstva(ls),'2'))
+    debug()
+    test1()
 
