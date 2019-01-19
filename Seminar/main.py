@@ -109,7 +109,7 @@ def iterative_bfs(graph, start):
             path.append(v)
         q.extend(w for w in graph[v] if w not in q and w not in path)
 
-    print(path)
+    # print(path)
     return path
 
 def isMST(graph, numNodes):
