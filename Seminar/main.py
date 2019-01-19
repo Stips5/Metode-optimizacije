@@ -112,7 +112,7 @@ def iterative_bfs(graph, start):
     print(path)
     return path
 
-def isOver(graph, numNodes):
+def isMST(graph, numNodes):
     if graph.__len__() < 1:
         return False
 
@@ -132,7 +132,7 @@ def kruskov(data, numOfNode, threshold):
     listOfEdgeObjects.sort(key=attrgetter('cost'))  # sort by cost
 
     for edge in listOfEdgeObjects:
-        if isOver(novaListaEdgeObjekata, numOfNode):     #broji visited i vidit jel odgovara broju nodeova
+        if isMST(novaListaEdgeObjekata, numOfNode):     #broji visited i vidit jel odgovara broju nodeova
             break
         novaListaEdgeObjekata.append(edge)
 
