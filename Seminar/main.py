@@ -83,8 +83,7 @@ def isCircle(graph, start_point):
     visited = set()
     visited.add(queue[0])
     while queue:
-        from_point = queue.pop(0)  # BFS
-        # from_point=queue.pop() #DFS
+        from_point = queue.pop(0)
         for to_point in graph[from_point]:
             if to_point in visited:
                 return True
@@ -100,22 +99,24 @@ def pathPrint(path):
         print(i.node1, i.node2)
     print()
 
-def iterative_bfs(graph, start, path=[]):
+def iterative_bfs(graph, start):
     '''iterative breadth first search from start'''
+    path = []
     q = deque(start)
     while q:
         v = q.popleft()
-        path.append(v)
+        if v not in path:
+            path.append(v)
         q.extend(w for w in graph[v] if w not in q and w not in path)
-        print(q, path)
 
+    print(path)
     return path
 
 def isOver(graph, numNodes):
     if graph.__len__() < 1:
         return False
 
-    path = iterative_bfs(makeListSusjedstva(graph), '0')
+    path = iterative_bfs(makeListSusjedstva(graph), graph[0].node1)
 
     if path.__len__() == numNodes:
         return True
@@ -126,25 +127,20 @@ def kruskov(data, numOfNode, threshold):
 
     listOfEdgeObjects = readData(data)
     novaListaEdgeObjekata = list()
-    graf = dict()
 
     listOfEdgeObjects.sort(key=attrgetter('length'))  #sort by length
     listOfEdgeObjects.sort(key=attrgetter('cost'))  # sort by cost
 
     for edge in listOfEdgeObjects:
-        # if isMTS(graf, numOfNode):        #brojat visited i vidit jel odgovara broju nodeova
-        if isOver(graf, numOfNode):
+        if isOver(novaListaEdgeObjekata, numOfNode):     #broji visited i vidit jel odgovara broju nodeova
             break
-
-        #dodaj u novu listu
         novaListaEdgeObjekata.append(edge)
 
         #provjeri je li napravilo krug
-        isCirc = isCircle(makeListSusjedstva(novaListaEdgeObjekata), listOfEdgeObjects[0].node1)
-        if isCirc:
+        if isCircle(makeListSusjedstva(novaListaEdgeObjekata), listOfEdgeObjects[0].node1):
             novaListaEdgeObjekata.pop()
 
-        #dohvati zadnja dva elemeta
+        #dohvati zadnja dva elemeta i provjeri jel im length veci od thresholda
         if novaListaEdgeObjekata.__len__() > 1:
             previous = novaListaEdgeObjekata[-2]
             last = novaListaEdgeObjekata[-1]
@@ -157,43 +153,6 @@ def kruskov(data, numOfNode, threshold):
         sum += int(e.cost)
 
     return novaListaEdgeObjekata, sum
-
-#krushow length
-def kruskovL(data, numOfNode, threshold):
-
-    # nodeGroups = list()
-    listOfEdgeObjects = readData(data)
-    novaListaEdgeObjekata = list()
-    graf = dict()
-
-    listOfEdgeObjects.sort(key=attrgetter('length'))  #sort by length
-
-    for edge in listOfEdgeObjects:
-        if isMTS(graf, numOfNode):        #brojat visited i vidit jel odgovara broju nodeova
-            break
-        isCirc = isCircle(makeListSusjedstva(novaListaEdgeObjekata), listOfEdgeObjects[0].node1)
-        if not isCirc:
-            novaListaEdgeObjekata.append(Edge(edge.node1, edge.node2, edge.length, edge.cost))
-
-            if novaListaEdgeObjekata.__len__() > 1:
-                previous = novaListaEdgeObjekata[-2]
-                last = novaListaEdgeObjekata[-1]
-
-                if (int(previous.length) + int(last.length)) > threshold:
-                    novaListaEdgeObjekata.pop(-1)
-
-    sum = 0
-    for e in novaListaEdgeObjekata:
-        sum += int(e.cost)
-
-    return graf, sum
-
-def isMTS(graf, numOfNodes):
-    #test bfs, get all nodes and get path and see does path contains all modes
-
-    if numOfNodes-1 == graf.__len__():
-        return True
-    return False
 
 def test1():
     cnt = 0
@@ -244,19 +203,27 @@ def test1():
     print(cnt / 4, "%")
 
 def debug():
+
+
     print()
-    print("test sample", "\n", "2 3 7 1", "\n", "3 1 9 1", "\n", "1 0 8 1", "\n", "3 0 1 5", "\n", "1 2 5 7", "\n", "0 2 8 4")
-    graf, cost = kruskov(["2 3 7 1", "3 1 9 1", "1 0 8 1", "3 0 1 5", "1 2 5 7", "0 2 8 4"], 4, 10)
+    print("test sample ",  "\n","2 3 7 1", "\n", "3 1 9 1", "\n", "1 0 8 1", "\n", "3 0 1 5",  "\n","1 2 5 7",  "\n","0 2 8 4")
+    graf, cost = kruskov(["2 3 7 1","3 1 9 1","1 0 8 1","3 0 1 5","1 2 5 7","0 2 8 4"], 4, 1000)
     pathPrint(graf)
-    if cost == 14:
+    if cost == 3:
         print("Ok")
     else:
-        print("Error, expected result is 14 not ", cost)
+        print("Error, expected result is 3 not ", cost)
+
+    # print()
+    # print("test sample", "\n", "2 3 7 1", "\n", "3 1 9 1", "\n", "1 0 8 1", "\n", "3 0 1 5", "\n", "1 2 5 7", "\n", "0 2 8 4")
+    # graf, cost = kruskov(["2 3 7 1", "3 1 9 1", "1 0 8 1", "3 0 1 5", "1 2 5 7", "0 2 8 4"], 4, 10)
+    # pathPrint(graf)
+    # if cost == 14:
+    #     print("Ok")
+    # else:
+    #     print("Error, expected result is 14 not ", cost)
 
 if __name__ == '__main__':
-
-    # ls = readData(["2 3 7 1", "3 1 9 1", "1 0 8 1", "3 0 1 5", "1 2 5 7"])
-    # print(iterative_bfs(makeListSusjedstva(ls),'2'))
-    debug()
+    # debug()
     test1()
 
