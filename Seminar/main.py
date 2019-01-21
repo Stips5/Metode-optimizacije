@@ -108,8 +108,7 @@ def kruskal(data, numOfNode, threshold):
     listOfEdgeObjects.sort(key=attrgetter('cost'))
 
     for edge in listOfEdgeObjects:
-        if isMST(novaListaEdgeObjekata, numOfNode):
-            break
+        if isMST(novaListaEdgeObjekata, numOfNode): break
         novaListaEdgeObjekata.append(edge)
 
         if isCircle(makeListSusjedstva(novaListaEdgeObjekata)):
@@ -118,14 +117,17 @@ def kruskal(data, numOfNode, threshold):
         if novaListaEdgeObjekata.__len__() > 1:
             previous = novaListaEdgeObjekata[-2]
             last = novaListaEdgeObjekata[-1]
-            connectedLen = int(previous.length) + int(last.length)
-            if connectedLen > threshold:
-                novaListaEdgeObjekata.remove(last)
+            if previous.node1 == last.node1 \
+                    or previous.node1 == last.node2 \
+                    or previous.node2 == last.node1 \
+                    or previous.node2 == last.node2:
+                connectedLen = int(previous.length) + int(last.length)
+                if connectedLen > threshold:
+                    novaListaEdgeObjekata.remove(last)
 
     sum = 0
     for e in novaListaEdgeObjekata:
         sum += int(e.cost)
-
     return novaListaEdgeObjekata, sum
 
 def test1():
