@@ -1,39 +1,13 @@
 """ created by stips on 14.01.19. using PyCharm , python_version = 3.5 """
 from collections import deque
-
+from operator import attrgetter
+import random
 from Seminar.Edge import *
 
 """
 Spanning        
     https://community.topcoder.com/stat?c=problem_statement&pm=3099
-
-Given a connected graph with nodes nodes, where each edge is undirected and has both a length and a cost, 
-your task is to pick a subset of the edges such that the graph is still connected, 
-the minimum distance between each pair of nodes is less than or equal to threshold, and the total cost is minimized. 
-You should return this minimum cost. The graph will be given as a String[], g, each element of which represents an edge in the form "u v length cost", 
-where u and v are the zero-based indices of the two nodes connected by this edge. For example, consider the following input:
-
-nodes = 3
-threshold = 5
-g = {"0 1 4 1","0 2 3 2","1 2 1 4"}
-
-If we select the first and second edges, then the distance between nodes 1 and 2 ends up being 7, greater than our threshold. 
-However, if we pick the first and third edges, the distance between all pairs of nodes is 5 or less, 
-and the cost is minimized (picking the second and third edges would cost more). Thus, we return the cost of these two edges, 5.
-
-Constraints
--	g will contain between 1 and 18 elements, inclusive.
--	nodes will be between 2 and 10, inclusive.
--	threshold will be between 1 and 1000, inclusive.
--	Each element of g will be formatted as "u v length cost", where u, v, length and cost are all integers with no extra leading zeros.
--	Each u and v will be between 0 and nodes-1, inclusive.
--	Each length and cost will be between 1 and 100, inclusive.
--	No two elements of g will refer to edges between the same pair of nodes.
--	In each element of g, u will not equal v.
--	If you use all of the edges, the graph will be connected, and the minimum distance between each pair of nodes will be less than or equal to threshold.
 """
-
-from operator import attrgetter
 
 def getListOfNodes(listaEdgeObje):
     listaNodeova = list()
@@ -75,10 +49,11 @@ def readData(input):
 
     return listOfEdges
 
-def isCircle(graph, start_point):
+def isCircle(graph):
     if graph.__len__() == 0:
         return False
 
+    start_point, _ = random.choice(list(graph.items()))
     queue = [start_point]
     visited = set()
     visited.add(queue[0])
@@ -99,8 +74,10 @@ def pathPrint(path):
         print(i.node1, i.node2)
     print()
 
-def iterative_bfs(graph, start):
+def iterative_bfs(graph):
     '''iterative breadth first search from start'''
+
+    start, _ = random.choice(list(graph.items()))
     path = []
     q = deque(start)
     while q:
@@ -109,38 +86,35 @@ def iterative_bfs(graph, start):
             path.append(v)
         q.extend(w for w in graph[v] if w not in q and w not in path)
 
-    # print(path)
     return path
 
 def isMST(graph, numNodes):
     if graph.__len__() < 1:
         return False
 
-    path = iterative_bfs(makeListSusjedstva(graph), graph[0].node1)
+    path = iterative_bfs(makeListSusjedstva(graph))
 
     if path.__len__() == numNodes:
         return True
     else:
         return False
 
-def kruskov(data, numOfNode, threshold):
+def kruskal(data, numOfNode, threshold):
 
     listOfEdgeObjects = readData(data)
     novaListaEdgeObjekata = list()
 
-    listOfEdgeObjects.sort(key=attrgetter('length'))  #sort by length
-    listOfEdgeObjects.sort(key=attrgetter('cost'))  # sort by cost
+    listOfEdgeObjects.sort(key=attrgetter('length'))
+    listOfEdgeObjects.sort(key=attrgetter('cost'))
 
     for edge in listOfEdgeObjects:
-        if isMST(novaListaEdgeObjekata, numOfNode):     #broji visited i vidit jel odgovara broju nodeova
+        if isMST(novaListaEdgeObjekata, numOfNode):
             break
         novaListaEdgeObjekata.append(edge)
 
-        #provjeri je li napravilo krug
-        if isCircle(makeListSusjedstva(novaListaEdgeObjekata), listOfEdgeObjects[0].node1):
+        if isCircle(makeListSusjedstva(novaListaEdgeObjekata)):
             novaListaEdgeObjekata.pop()
 
-        #dohvati zadnja dva elemeta i provjeri jel im length veci od thresholda
         if novaListaEdgeObjekata.__len__() > 1:
             previous = novaListaEdgeObjekata[-2]
             last = novaListaEdgeObjekata[-1]
@@ -159,7 +133,7 @@ def test1():
 
     print()
     print("test sample ", "\n", "0 1 4 1", "\n","0 2 3 2","\n","1 2 1 4")
-    graf, cost = kruskov(["0 1 4 1","0 2 3 2","1 2 1 4"], 3, 5)
+    graf, cost = kruskal(["0 1 4 1", "0 2 3 2", "1 2 1 4"], 3, 5)
     pathPrint(graf)
     if cost == 5:
         print("Ok")
@@ -169,7 +143,7 @@ def test1():
 
     print()
     print("test sample ",  "\n","2 3 7 1", "\n", "3 1 9 1", "\n", "1 0 8 1", "\n", "3 0 1 5",  "\n","1 2 5 7",  "\n","0 2 8 4")
-    graf, cost = kruskov(["2 3 7 1","3 1 9 1","1 0 8 1","3 0 1 5","1 2 5 7","0 2 8 4"], 4, 1000)
+    graf, cost = kruskal(["2 3 7 1", "3 1 9 1", "1 0 8 1", "3 0 1 5", "1 2 5 7", "0 2 8 4"], 4, 1000)
     pathPrint(graf)
     if cost == 3:
         print("Ok")
@@ -179,7 +153,7 @@ def test1():
 
     print()
     print("test sample", "\n", "2 3 7 1",  "\n","3 1 9 1",  "\n","1 0 8 1",  "\n","3 0 1 5", "\n", "1 2 5 7",  "\n","0 2 8 4")
-    graf, cost = kruskov(["2 3 7 1", "3 1 9 1", "1 0 8 1", "3 0 1 5", "1 2 5 7", "0 2 8 4"], 4, 10)
+    graf, cost = kruskal(["2 3 7 1", "3 1 9 1", "1 0 8 1", "3 0 1 5", "1 2 5 7", "0 2 8 4"], 4, 10)
     pathPrint(graf)
     if cost == 14:
         print("Ok")
@@ -189,7 +163,7 @@ def test1():
 
     print()
     print("test sample", "0 1 5 5")
-    graf, cost = kruskov(["0 1 5 5"], 2, 100)
+    graf, cost = kruskal(["0 1 5 5"], 2, 100)
     pathPrint(graf)
     if cost == 5:
         print("Ok")
@@ -204,24 +178,14 @@ def test1():
 
 def debug():
 
-
     print()
-    print("test sample ",  "\n","2 3 7 1", "\n", "3 1 9 1", "\n", "1 0 8 1", "\n", "3 0 1 5",  "\n","1 2 5 7",  "\n","0 2 8 4")
-    graf, cost = kruskov(["2 3 7 1","3 1 9 1","1 0 8 1","3 0 1 5","1 2 5 7","0 2 8 4"], 4, 1000)
+    print("test sample", "\n", "2 3 7 1", "\n", "3 1 9 1", "\n", "1 0 8 1", "\n", "3 0 1 5", "\n", "1 2 5 7", "\n", "0 2 8 4")
+    graf, cost = kruskal(["2 3 7 1", "3 1 9 1", "1 0 8 1", "3 0 1 5", "1 2 5 7", "0 2 8 4"], 4, 10)
     pathPrint(graf)
-    if cost == 3:
+    if cost == 14:
         print("Ok")
     else:
-        print("Error, expected result is 3 not ", cost)
-
-    # print()
-    # print("test sample", "\n", "2 3 7 1", "\n", "3 1 9 1", "\n", "1 0 8 1", "\n", "3 0 1 5", "\n", "1 2 5 7", "\n", "0 2 8 4")
-    # graf, cost = kruskov(["2 3 7 1", "3 1 9 1", "1 0 8 1", "3 0 1 5", "1 2 5 7", "0 2 8 4"], 4, 10)
-    # pathPrint(graf)
-    # if cost == 14:
-    #     print("Ok")
-    # else:
-    #     print("Error, expected result is 14 not ", cost)
+        print("Error, expected result is 14 not ", cost)
 
 if __name__ == '__main__':
     # debug()
