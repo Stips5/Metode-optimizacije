@@ -49,12 +49,18 @@ def readData(input):
 
     return listOfEdges
 
+def pathPrint(path):
+    print("Graph edges")
+    for i in path:
+        print(i.node1, i.node2)
+    print()
+
 def isCircle(graph):
     if graph.__len__() == 0:
         return False
 
-    start_point, _ = random.choice(list(graph.items()))
-    queue = [start_point]
+    start, _ = random.choice(list(graph.items()))
+    queue = [start]
     visited = set()
     visited.add(queue[0])
     while queue:
@@ -68,25 +74,19 @@ def isCircle(graph):
             graph[to_point].remove(from_point)
     return False
 
-def pathPrint(path):
-    print("Graph edges")
-    for i in path:
-        print(i.node1, i.node2)
-    print()
-
 def iterative_bfs(graph):
     '''iterative breadth first search from start'''
 
     start, _ = random.choice(list(graph.items()))
-    path = []
+    visited = []
     q = deque(start)
     while q:
         v = q.popleft()
-        if v not in path:
-            path.append(v)
-        q.extend(w for w in graph[v] if w not in q and w not in path)
+        if v not in visited:
+            visited.append(v)
+        q.extend(w for w in graph[v] if w not in q and w not in visited)
 
-    return path
+    return visited
 
 def isMST(graph, numNodes):
     if graph.__len__() < 1:
