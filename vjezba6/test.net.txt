@@ -1,0 +1,12 @@
+*vertices 8497
+4 "AT&T"
+5 "Bertelsmann"
+6 "Cablevision"
+7 "CNHI"
+8 "Comcast"
+30 "Time Warner"
+*arcs
+8       8
+4       8
+8       30
+6       4
