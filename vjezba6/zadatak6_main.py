@@ -169,10 +169,9 @@ if __name__ == '__main__':
 
     max = getMax(komponentee)
 
-    print("Top 5 companies")
     top = getTop5(ls, komponentee, vrhovi)
 
-    print("firme")
+    print("Top 5 companies")
     for k, v in top.items():
         print(k, v)
 
