@@ -1,0 +1,1597 @@
+*vertices 8497
+1 "Advance Publications"
+2 "A.H. Belo"
+3 "America Online (AOL)"
+4 "AT&T"
+5 "Bertelsmann"
+6 "Cablevision"
+7 "CNHI"
+8 "Comcast"
+9 "Cox Enterprises"
+10 "Disney"
+11 "Dow-Jones &"
+12 "E.W. Scripps"
+13 "Gannett"
+14 "General Electric (GE)"
+15 "Hearst"
+16 "Hollinger"
+17 "Knight Ridder"
+18 "Liberty Group Publishing"
+19 "The McGraw-Hill Companies"
+20 "Media General"
+21 "Meredith"
+22 "McClatchy"
+23 "News"
+24 "New York Times"
+25 "Reed Elsevier"
+26 "Seagram"
+27 "Sinclair Broadcast Group (SBG)"
+28 "Sony"
+29 "Times Mirror"
+30 "Time Warner"
+31 "Tribune"
+32 "USA Networks"
+33 "Viacom"
+34 "Vulcan"
+35 "Washington Post"
+36 "Yahoo!"
+37 "The Birmingham News (Alabama)"
+38 "Harrisburg Patriot-News (Pennsylvania)"
+39 "The Huntsville Times (Alabama)"
+40 "The Jersey Journal (Jersey City, NJ)"
+41 "Mississippi Press (Pascagoula)"
+42 "The Oregonian (Portland)"
+43 "Plain Dealer (Cleveland)"
+44 "The Star-Ledger (Newark, NJ)"
+45 "Staten Island Advance (NY)"
+46 "Syracuse Herald-Journal (NY)"
+47 "The Herald-American (Sunday)"
+48 "The Post-Standard (Syracuse, NY)"
+49 "The Times-Picayune (New Orleans)"
+50 "The Trenton Times ( New Jersey)"
+51 "Union-News & Sunday Republican (Springfield, MA)"
+52 "Sun Newspapers"
+53 "Booth Newspapers of Michigan"
+54 "Ann Arbor News"
+55 "Bay City Times"
+56 "Flint Journal"
+57 "Grand Rapids Press"
+58 "Jackson Citizen Patriot"
+59 "Kalamazoo Gazette"
+60 "Mobile Register"
+61 "Muskegon Chronicle"
+62 "Saginaw News"
+63 "American City Business Journals"
+64 "Conde Nast Publications"
+65 "Allure"
+66 "Architectural Digest"
+67 "Bon Appetit"
+68 "Bride's"
+69 "Conde Nast House & Garden"
+70 "Women's Sports & Fitness"
+71 "Conde Nast Traveler"
+72 "Details"
+73 "Glamour"
+74 "Gourmet"
+75 "GQ"
+76 "Lucky"
+77 "Mademoiselle"
+78 "The New Yorker"
+79 "Self"
+80 "Tatler"
+81 "The World of Interiors"
+82 "Vanity Fair"
+83 "Vogue"
+84 "Wired"
+85 "Parade Publications"
+86 "Parade"
+87 "react"
+88 "Fairchild Publications"
+89 "W"
+90 "Jane"
+91 "Women's Wear Daily"
+92 "Daily News Record"
+93 "Footwear News"
+94 "Home Furnishings News"
+95 "HighPoints"
+96 "Executive Technology"
+97 "Children's Business"
+98 "Supermarket News"
+99 "Brand Marketing"
+100 "Salon News"
+101 "?"
+102 "NewsFlash"
+103 "Epicurious.com"
+104 "Style.com"
+107 "WFAA TV- Dallas/Fort Worth (ABC)"
+108 "KHOU TV - Houston (CBS)"
+109 "KING TV - Seattle (NBC)"
+110 "KONG TV - Seattle (Ind)"
+111 "KXTV - Sacramento (ABC)"
+112 "KMOV TV - St. Louis (CBS)"
+113 "KGW TV - Portland (NBC)"
+114 "WCNC TV - Charlotte (NBC)"
+115 "KENS TV - San Antonio (CBS)"
+116 "WVEC TV - Hampton/Norfolk (ABC)"
+117 "WWL TV - New Orleans (CBS)"
+118 "KASA TV - Albuquerque (FOX)"
+119 "WHAS TV - Louisville (ABC)"
+120 "KOTV - Tulsa (CBS)"
+121 "KHNL TV - Honolulu (NBC)"
+122 "KFVE TV - Honolulu (UPN)"
+123 "KREM TV - Spokane (CBS)"
+124 "KSKN TV - Spokane (UPN)"
+125 "KMSB TV - Tucson (FOX)"
+126 "KTTU TV - Tucson (UPN)"
+127 "KTVB TV - Boise (NBC)"
+128 "KVUE TV - Austin (ABC)"
+129 "Belo Productions"
+130 "Northwest Cable News"
+131 "Texas Cable News"
+132 "The Hemet News (California)"
+133 "The Dallas Morning News"
+134 "Providence Journal-Bulletin"
+135 "The Press-Enterprise (Riverside, CA)"
+136 "Messenger-Inquirer (Owensboro, KY)"
+137 "The Eagle (Bryan-College Station, TX)"
+138 "The Gleaner (Henderson, KY)"
+139 "Denton Publishing Company (greater Dallas area)"
+140 "Denton Record-Chronicle"
+141 "Lewisville News"
+142 "Grapevine Sun"
+143 "Dallas Mavericks"
+144 "?"
+145 "CompuServe Interactive Services"
+146 "AOL Instant Messenger"
+147 "AOL.com portal"
+148 "Digital City"
+149 "AOL Europe"
+150 "ICQ"
+151 "The Knot"
+152 "MapQuest.com"
+153 "Spinner.com"
+154 "DrKoop.com"
+155 "Nullsoft"
+156 "Netscape Communications"
+157 "Netscape Netcenter portal"
+158 "AOL MovieFone"
+159 "iAmaze"
+160 "Quack.com"
+163 "AT&T Broadband"
+164 "AT&T Cable Services"
+165 "AT&T Digital Cable"
+166 "Excite@Home"
+167 "Net2Phone"
+168 "Kearns-Tribune"
+169 "Salt Lake Tribune"
+170 "Liberty Media"
+171 "BET Holdings II"
+172 "BET Cable Network"
+173 "BET Action Pay-Per-View"
+174 "BET on Jazz"
+175 "Canales"
+176 "Court TV"
+177 "Discovery Communications"
+178 "Discovery Channel"
+179 "The Learning Channel"
+180 "Animal Planet"
+181 "Discovery People"
+182 "Travel Channel"
+183 "Discovery Digital Services"
+184 "Discovery Civilization"
+185 "Discovery Health"
+186 "Discovery Home & Leisure"
+187 "Discovery Kids"
+188 "Discovery Wings"
+189 "Discovery en Espanol"
+190 "Animal Planet Asia"
+191 "Animal Planet Europe"
+192 "Animal Planet Latin America"
+193 "Discovery Asia"
+194 "Discovery India"
+195 "Discovery Japan"
+196 "Discovery Europe"
+197 "Discovery Turkey"
+198 "Discovery Germany"
+199 "Discovery Italy/Africa"
+200 "Discovery Latin America"
+201 "Discovery Latin America Kids Network"
+202 "People & Arts (Latin America)"
+203 "Discovery Channel Online"
+204 "Encore Media Group"
+205 "Encore"
+206 "MOVIEplex"
+207 "Thematic Multiplex"
+208 "STARZ!"
+209 "STARZ! Multiplex"
+210 "Love Stories"
+211 "Westerns"
+212 "Mystery"
+213 "Action"
+214 "True Stories"
+215 "WAM! America's Kidz Network"
+216 "STARZ! Theater"
+217 "BET Movies/STARZ!"
+218 "STARZ! Family"
+219 "STARZ! Cinema"
+220 "E! Entertainment Television"
+221 "Style"
+222 "Flextech p.l.c."
+223 "Bravo"
+224 "Challenge TV"
+225 "HSN Direct"
+226 "KinderNet"
+227 "Living"
+228 "SMG"
+229 "Trouble"
+230 "TV Travel Shop"
+231 "UK Arena (UKTV)"
+232 "UK Gold (UKTV)"
+233 "UK Gold Classics (UKTV)"
+234 "UK Horizons (UKTV)"
+235 "UK Style (UKTV)"
+236 "UK Play (UKTV)"
+237 "Fox Kids Worldwide"
+238 "International Channel"
+239 "Jupiter Programming"
+240 "Cable Soft Network"
+241 "CNBC Asia"
+242 "Golf Network"
+243 "?"
+244 "J-Sports"
+245 "The Shop Channel"
+246 "MacNeil/Lehrer Productions"
+247 "MultiThematiques"
+248 "Canal Jimmy (France)"
+249 "Canal Jimmy (Italy)"
+250 "Cine Cinemas (France)"
+251 "Cine Cinemas (Italy)"
+252 "Cine Classics (France)"
+253 "Cine Classics (Spain)"
+254 "Cine Classics (Italy)"
+255 "Forum Planete (France)"
+256 "Planete (France)"
+257 "Planete (Poland)"
+258 "Planete (Germany)"
+259 "Planete (Italy)"
+260 "Seasons (France)"
+261 "Seasons (Spain)"
+262 "Seasons (Germany)"
+263 "Seasons (Italy)"
+264 "Odyssey"
+265 "Pramer"
+266 "America Sports"
+267 "Big Channel"
+268 "Canal a"
+269 "Cineplaneta"
+270 "CV SAT"
+271 "Ideas"
+272 "Magic Kids"
+273 "P&E"
+274 "The Premium Movie Partnership"
+275 "QVC"
+276 "QVC Network"
+277 "QVC The Shopping Network (UK)"
+278 "QVC Germany"
+279 "iQVC"
+280 "Telemundo Network"
+281 "Telemundo Station Group"
+282 "Torneos y Competencias"
+283 "?"
+284 "TV Guide Channel"
+285 "TV Guide Interactive"
+286 "TV Guide Sneak Prevue"
+287 "UVTV"
+288 "Superstar"
+289 "TV Guide Magazine"
+290 "TV Guide Online"
+291 "The Television Games Network"
+292 "?"
+293 "?"
+294 "America's Store"
+295 "ISN"
+296 "?"
+297 "HOT (Germany)"
+298 "Shop Channel (Japan)"
+299 "Sci-Fi Channel"
+300 "USA Network"
+301 "USA Broadcasting"
+302 "?"
+303 "Studios USA"
+304 "USA Films"
+305 "Hotel Reservations Network"
+306 "?"
+307 "New England Cable News"
+308 "Time Warner Entertainment"
+309 "Academic Systems"
+310 "ACTV"
+311 "Digital Health Group"
+312 "DMX"
+313 "drugstore.com"
+314 "HomeGrocer.com"
+315 "iBeam Broadcasting"
+316 "Interactive Pictures"
+317 "iVillage"
+318 "KPCB Java Fund, L.P."
+319 "The Lightspan Partnership"
+320 "priceline.com"
+321 "Quokka Sports"
+322 "Sportsline USA"
+323 "MTVN Online"
+324 "TiVo"
+325 "Total Entertainment Network"
+326 "PRIMEDIA"
+327 "Bresnan International Partners (Chile)"
+328 "Metropolis Intercom, S.A."
+329 "Cablevision S.A."
+330 "Jupiter Telecommunications Co."
+331 "Princes Holdings"
+332 "Sky Latin America"
+333 "Sprint PCS Group"
+334 "TCI Cablevision of Puerto Rico"
+335 "Telewest Communications plc"
+336 "Antec"
+337 "General Instrument"
+338 "Bantam Doubleday Dell"
+339 "Bantam Books"
+340 "Doubleday"
+341 "Dell - Delacorte"
+342 "Broadway Books"
+343 "Bantam Doubleday Dell Books for Young Readers"
+344 "Bantam Doubleday Audio"
+345 "Bantam Books Canada"
+346 "Doubleday Canada"
+347 "Transworld Publishers"
+348 "Doubleday Direct"
+349 "Literary Guild"
+350 "Doubleday Book Club"
+351 "Crossings"
+352 "Random House"
+353 "Random House Trade Publishing Group"
+354 "Random House Information Publishing Group"
+355 "Knopf Publishing Group"
+356 "Crown Publishing Group"
+357 "Ballantine Publishing Group"
+358 "Random House Children's Publishing"
+359 "Random House Audio"
+360 "Random House Value Publishing"
+361 "Fodors Travel Publications"
+362 "Random House New Media"
+363 "Random House Canada"
+364 "Random House U.K."
+365 "Random House Australia"
+366 "Random House New Zealand"
+367 "Random House South Africa"
+368 "Bee Book"
+369 "Bertelsmann Lexikon Verlag"
+370 "Donauland"
+371 "Science Fiction Book Club"
+372 "Bold Type"
+373 "BOL"
+374 "ABI Building Data"
+375 "AZ Bertelsmann"
+376 "BauNetz"
+377 "Entertainment Media Verlag"
+378 "Gabler/Vieweg/Westdeutscher Verlag"
+379 "ICW Publications"
+380 "MMV Medizin Verlag"
+381 "Verkehr Online"
+382 "Heinrich Vogel Verlag"
+383 "Wila Verlag"
+384 "Springer Verlag"
+385 "CLT-UFA"
+386 "RTL"
+387 "RTL-2"
+388 "SUPER RTL"
+389 "Premiere World"
+390 "VOX"
+391 "Channel 5"
+392 "FUN TV"
+393 "M6"
+394 "Multivision"
+395 "Teva"
+396 "RTL - 4"
+397 "RTL - 5"
+398 "RTL - 9"
+399 "RTL - Tele Letzebuerg"
+400 "RTL Klub"
+401 "UFA Film & TV Production"
+402 "Trebitsch Production"
+403 "Delux Productions"
+404 "Cinevideo"
+405 "Holland Media House"
+406 "First Choice"
+407 "RTL Radio"
+408 "Gruner + Jahr"
+409 "Brigitte"
+410 "Capital"
+411 "Eltern"
+412 "Frau im Spiegel"
+413 "Schoner Wohnen"
+414 "Der Spiegel"
+415 "Flora"
+416 "Geo"
+417 "Geo Saison"
+418 "Oskar's"
+419 "P.M. Magazine"
+420 "Stern"
+421 "Tip"
+422 "TV Today"
+423 "American Homestyle"
+424 "Child"
+425 "Fitness"
+426 "Computer & Co."
+427 "rtv"
+428 "AOL Germany"
+429 "AOL France"
+430 "bs medic"
+431 "Sport 1"
+432 "Lycos Europe"
+433 "CD Now"
+434 "Bertelsmann Interactive Studios"
+435 "Bertelsmann mediaSystems"
+436 "Bertelsmann Corporate Information Systems"
+437 "mediaWays"
+438 "Pixelpark"
+439 "Telemedia"
+440 "Services"
+441 "eps Bertelsmann"
+442 "Mount Media"
+443 "Bertelsmann Music Group (BMG)"
+444 "BMG North America"
+445 "Arista Records"
+446 "RCA"
+447 "RCA Victor"
+448 "BMG Classics"
+449 "BMG Music Publishing"
+450 "BMG Music Service"
+451 "BMG Special Products"
+452 "Windham Hill Group"
+453 "Bugjuice"
+454 "Peeps Republic"
+455 "Twang This!"
+456 "BMG Austria"
+457 "BMG Australia"
+458 "BMG Canada"
+459 "BMG Germany"
+460 "BMG Germany Interactive"
+461 "BMG Germany Studios"
+462 "BMG Germany Video"
+463 "BMG Hongkong"
+464 "BMG United Kingdom"
+465 "Sonopress"
+466 "Cablevision Cable System"
+467 "Optimum TV"
+468 "Cablevision Lightpath"
+469 "Optimum Telephone"
+470 "Optimum Online"
+471 "Rainbow Media Holdings"
+472 "American Movie Classics"
+473 "?"
+474 "Independent Film Channel"
+475 "MuchMusic"
+476 "News 12"
+477 "News 12 Long Island"
+478 "News 12 Connecticut"
+479 "News 12 Westchester"
+480 "News 12 New Jersey"
+481 "News 12 The Bronx"
+482 "Neighborhood News 12"
+483 "Romance Classics"
+484 "extrahelp"
+485 "Regional Programming Partners"
+486 "Fox Sports Bay Area"
+487 "Fox Sports Chicago"
+488 "Fox Sports New England"
+489 "Fox Sports New York"
+490 "Fox Sports Ohio"
+491 "Madison Square Garden Network"
+492 "MSG Metro Learning"
+493 "MSG Metro Guide"
+494 "MSG Metro Traffic and Weather"
+495 "Radio City Productions"
+496 "Madison Square Garden Properties"
+497 "New York Knicks"
+498 "New York Rangers"
+499 "New York Liberty (WNBA)"
+500 "New England Seawolves"
+501 "Hartford Wolf Pack"
+502 "Radio City Music Hall"
+504 "Nobody Beats the Wiz"
+505 "EZSeek"
+506 "The News Courier (Athens, Alabama)"
+507 "The North Jefferson News (Gardendale, Alabama)"
+508 "The Leeds News (Alabama)"
+509 "St. Clair News (Alabama)"
+510 "The Cullman Times (Alabama)"
+511 "Harrison Daily Times (Arkansas)"
+512 "Newton County Times (Arkansas)"
+513 "Boca Raton News (Florida)"
+514 "Busy Shopper (Fort Ogelthorpe, Georgia)"
+515 "The Daily Citizen News (Dalton, Georgia)"
+516 "Monroe County Register (Georgia)"
+517 "Jackson Progress-Argus (Georgia)"
+518 "Clayton News Daily (Jonesboro, Georgia)"
+519 "The Madisonian (Georgia)"
+520 "The Henry Daily Herald (McDonough, Georgia)"
+521 "Union-Recorder (Milledgeville, Georgia)"
+522 "The Thomaston Times (Georgia)"
+523 "Americus Times-Recorder (Georgia)"
+524 "Cordele Dispatch (Georgia)"
+525 "The (Moultrie) Observer (Georgia)"
+526 "Thomasville Times-Enterprise (Georgia)"
+527 "The Tifton Gazette (Georgia)"
+528 "The Valdosta Daily Times (Georgia)"
+529 "Commercial-News (Danville, Illinois)"
+530 "Bourbon News-Mirror (Indiana)"
+531 "Bremen Enquirer (Indiana)"
+532 "Culver Citizen (Indiana)"
+533 "The Jeffersonville Evening News (Indiana)"
+534 "The Leader & Review (Knox, Indiana)"
+535 "Nappanee Advance News (Indiana)"
+536 "Pilot News (Plymouth, Indiana)"
+537 "Washington Times Herald (Indiana)"
+538 "The Tribune (New Albany, Indiana)"
+539 "Penny Saver Times (South Bend, Indiana)"
+540 "The (Anderson) Herald-Bulletin (Indiana)"
+541 "Greensburg Daily News (Indiana)"
+542 "The Kokomo Tribune (Indiana)"
+543 "The (Lebanon) Reporter (Indiana)"
+544 "Linton Daily Citizen (Indiana)"
+545 "Pharos-Tribune (Logansport, Indiana)"
+546 "Rushville Republican (Indiana)"
+547 "The (Terre Haute) Tribune-Star (Indiana)"
+548 "Alta Advertiser (Iowa)"
+549 "Clinton Herald (Iowa)"
+550 "Oskaloosa Herald (Iowa)"
+551 "Ad Express & Daily Lowegian (Centerville, Iowa)"
+552 "Aurelia Sentinel (Iowa)"
+553 "Cherokee County Daily Times (Iowa)"
+554 "Knoxville Journal Express (Iowa)"
+555 "Lake Park News (Iowa)"
+556 "Milford Mail (Iowa)"
+557 "Pella Chronicle (Iowa)"
+558 "Sioux Rapids Bulletin Press (Iowa)"
+559 "The Daily Reporter (Spencer, Iowa)"
+560 "Sprit Lake Beacon (Iowa)"
+561 "Pilot Tribune (Storm Lake, Iowa)"
+562 "The Coffeyville Journal (Kansas)"
+563 "Kiowa County Signal (Kansas)"
+564 "Carlisle Mercury (Kentucky)"
+565 "Corbin Times Tribune (Kentucky)"
+566 "The Cumberland Trading Post (Middlesboro, Kentucky)"
+567 "Glasgow Daily Times (Kentucky)"
+568 "Grayson Journal Enquirer (Kentucky)"
+569 "Grayson County News Gazette (Kentucky)"
+570 "Greenup News Times (Kentucky)"
+571 "Harlan Daily Enterprise (Kentucky)"
+572 "The Hazard Herald (Kentucky)"
+573 "Hazard Shopper (Kentucky)"
+574 "The Sentinel-Echo (London, Kentucky)"
+575 "McCreary County Record (Kentucky)"
+576 "The Daily News (Middlesboro, Kentucky)"
+577 "Morehead News (Kentucky)"
+578 "Olive Hill Times (Kentucky)"
+579 "The Floyd County Times (Kentucky)"
+580 "Pratt Tribune (Kentucky)"
+581 "The Richmond Register (Kentucky)"
+582 "The Times Journal (Russell Springs, Kentucky)"
+583 "News Democrat & Leader (Russellville, Kentucky)"
+584 "Commonwealth Journal (Somerset, Kentucky)"
+585 "Wayne County Outlook (Kentucky)"
+586 "The Cumberland Times-News (Maryland)"
+587 "Picayune Item (Mississippi)"
+588 "The Poplarville Democrat (Mississippi)"
+589 "The Star Herald (Kosciusdo, Mississippi)"
+590 "The Laurel Leader (Mississippi)"
+591 "The Newton Record (Mississippi)"
+592 "Wayne County News (Mississippi)"
+593 "Chadron Record (Nebraska)"
+594 "Custer County Chief (Nebraska)"
+595 "Alamogordo Daily News (New Mexico)"
+596 "Albion Advertiser (New York)"
+597 "Union-Sun & Journal (Lockport, New York)"
+598 "The Journal Register (Medina, New York)"
+599 "Niagara Gazette (New York)"
+600 "Tonawanda News (New York)"
+601 "The Stanly News & Press (Albemarle, North Carolina)"
+602 "The Apex Herald (North Carolina)"
+603 "The Progress (Apex, North Carolina)"
+604 "The Randolph Guide (Asbeboro, North Carolina)"
+605 "The Sampson Independent (Clinton, North Carolina)"
+606 "Bladen Journal (Elizabethtown, North Carolina)"
+607 "The Independent (Fuquay-Varina, North Carolina)"
+608 "Holly Springs Sun (Fuquay-Varina, North Carolina)"
+609 "Cleveland Post (Garner, North Carolina)"
+610 "Garner News (North Carolina)"
+611 "The King Times - News (North Carolina)"
+612 "The Robesonian (Lumberton, North Carolina)"
+613 "The Bulletin (Ramseur, North Carolina)"
+614 "The Randleman Reporter (North Carolina)"
+615 "The Weekly Independent (Rural Hall, North Carolina)"
+616 "Daily Southerner (Tarboro, North Carolina)"
+617 "Danbury Reporter (Walnut Cove, North Carolina)"
+618 "The Enterprise (Yadkinville, North Carolina)"
+619 "Yadkin Valley Shopper (North Carolina)"
+620 "Gallipolis Daily Tribune (Ohio)"
+621 "The Daily Sentinel (Pomeroy, Ohio)"
+622 "The Star Beacon (Astabula, Ohio)"
+623 "Ada Evening News (Oklahoma)"
+624 "Altus Times (Oklahoma)"
+625 "The Antlers American (Oklahoma)"
+626 "Blackwell Journal Tribune (Oklahoma)"
+627 "Bristow News - Recorder Citizen (Oklahoma)"
+628 "Chickasha Daily Express (Oklahoma)"
+629 "Claremore Daily Progress (Oklahoma)"
+630 "Cushing Daily Citizen (Oklahoma)"
+631 "Duncan Banner (Oklahoma)"
+632 "Durant Daily Democrat (Oklahoma)"
+633 "Edmond Evening Sun (Oklahoma)"
+634 "Enid News & Eagle (Oklahoma)"
+635 "Indian Journal (Eufaula, Oklahoma)"
+636 "Lake Eufaula World (Oklahoma)"
+637 "Fort Gibson Times (Oklahoma)"
+638 "Frederick Leader (Oklahoma)"
+639 "Guthrie News Leader (Oklahoma)"
+640 "Guymon Daily Herald (Oklahoma)"
+641 "Hartshorne Sun (Oklahoma)"
+642 "Henryetta Daily Free-Lance (Oklahoma)"
+643 "Holdenville Daily News (Oklahoma)"
+644 "Jay American (Oklahoma)"
+645 "News-Capital & Democrat (McAleste, Oklahoma)"
+646 "Macintosh County Democrat (Oklahoma)"
+647 "MC&D Extra (McAlester, Oklahoma)"
+648 "Mid West City Sun (Oklahoma)"
+649 "Minstrel (Minco, Oklahoma)"
+650 "Moore American (Oklahoma)"
+651 "Nowata Star (Oklahoma)"
+652 "The Norman Transcript (Oklahoma)"
+653 "Metro Buyer's Guide (Oklahoma City, Oklahoma)"
+654 "Okmulgee Daily Times (Oklahoma)"
+655 "Pauls Valley Daily Democrat (Oklahoma)"
+656 "Poteau News & Sun (Oklahoma)"
+657 "Jeffersonian Printing (Pryor, Oklahoma)"
+658 "Pryor Daily Times (Oklahoma)"
+659 "Sapulpa Daily Herald (Oklahoma)"
+660 "Herald Extra (Sapulpa, Oklahoma)"
+661 "News-Press (Stillwater, Oklahoma)"
+662 "Stilwell Democrat Journal (Oklahoma)"
+663 "Tahlequah Daily Press (Oklahoma)"
+664 "The Tuttle Times (Oklahoma)"
+665 "Waurika News-Democrat (Oklahoma)"
+666 "Westville Reporter (Oklahoma)"
+667 "Wewoka Daily Times (Oklahoma)"
+668 "Woodward News (Oklahoma)"
+669 "Corry Evening Journal (Pennsylvania)"
+670 "Tribune Democrat (Johnstown, Pennsylvania)"
+671 "Kane Republican (Pennsylvania)"
+672 "The Meadville Tribune (Pennsylvania)"
+673 "Punxsutawney Sprit (Pennsylvania)"
+674 "Ridgway Record (Pennsylvania)"
+675 "St. Mary's Daily Press (Pennsylvania)"
+676 "Titusville Herald (Pennsylvania)"
+677 "New Castle News (Pennsylvania)"
+678 "Warren County Guide (Pennsylvania)"
+679 "The Dispatch - News (South Carolina)"
+680 "Marion Star/Mullins Enterprise (South Carolina)"
+681 "The Newberry Observer (South Carolina)"
+682 "The Herald Independent (Winnsboro, South Carolina)"
+683 "Hot Springs Star (South Dakota)"
+684 "Clarborne Progress (Tazewall, Tennessee)"
+685 "Crossville Chronicle (Tennessee)"
+686 "Macon County Times (Tennessee)"
+687 "The Millington Star (Tennessee)"
+688 "Athens Daily Review (Texas)"
+689 "Big Spring Herald (Texas)"
+690 "Bonham Daily Favorite (Texas)"
+691 "Borger News-Herald (Texas)"
+692 "Cedar Creek Pilot (Gun Barrel City, Texas)"
+693 "Cleburne Times Review (Texas)"
+694 "Commerce Journal (Texas)"
+695 "Corsicana Daily Sun (Texas)"
+696 "The Daily Record (San Marcos, Texas)"
+697 "Del Rio News Herald (Texas)"
+698 "Gainesville Daily Register (Texas)"
+699 "Herald Banner (Greenville, Texas)"
+700 "Honey Grove Signal Citizen (Texas)"
+701 "The Huntsville Item (Texas)"
+702 "Jacksonville Daily Progress (Texas)"
+703 "Kilgor News Herald (Texas)"
+704 "Mexia Daily News (Texas)"
+705 "Mineral Wells Index (Texas)"
+706 "Orange Leader (Texas)"
+707 "Palo Pinto County Shopper (Texas)"
+708 "Palestine Herald Press (Texas)"
+709 "Port Arthur News (Texas)"
+710 "Sweetwater Reporter (Texas)"
+711 "Parker County Shopper (Texas)"
+712 "The Weatherford Democrat (Texas)"
+713 "Times West Virginian (Fairmont, West Virginia)"
+714 "The Logan Banner (West Virginia)"
+715 "Coal Valley News (Madison, West Virginia)"
+716 "Point Pleasant Register (West Virginia)"
+717 "The Jackson Star News (West Virginia)"
+718 "Jackson-Herald (Ripley, West Virginia)"
+719 "The (Beckley) Register-Herald (West Virginia)"
+720 "Bluefield Daily Telegraph (West Virginia)"
+721 "WENN-FM (Birmingham, Alabama)"
+722 "WERC-AM (Birmingham, Alabama)"
+723 "WMJJ-FM (Birmingham, Alabama)"
+724 "WDXB-FM (Birmingham, Alabama)"
+725 "WQEN-FM (Birmingham, Alabama)"
+726 "WAAX-AM (Gadsden, Alabama)"
+727 "WGMZ-FM (Gadsden, Alabama)"
+728 "WBHP-AM (Huntsville, Alabama)"
+729 "WDRM-FM (Huntsville, Alabama)"
+730 "WHOS-AM (Huntsville, Alabama)"
+731 "WTAK-FM (Huntsville, Alabama)"
+732 "WWXQ-FM (Huntsville, Alabama)"
+733 "WXQW-FM (Huntsville, Alabama)"
+734 "WDWG-FM (Mobile, Alabama)"
+735 "WKSJ-AM (Mobile, Alabama)"
+736 "WMXC-FM (Mobile, Alabama)"
+737 "WNTM-AM (Mobile, Alabama)"
+738 "WRKH-FM (Mobile, Alabama)"
+739 "WMCZ-FM (Montgomery, Alabama)"
+740 "WQLD-FM (Montgomery, Alabama)"
+741 "WZHT-FM (Montgomery, Alabama)"
+742 "WACT-AM (Tuscaloosa, Alabama)"
+743 "WRTR-FM (Tuscaloosa, Alabama)"
+744 "WTXT-FM (Tuscaloosa, Alabama)"
+745 "WZBQ-FM (Tuscaloosa, Alabama)"
+746 "KASH-FM (Anchorage, Alaska)"
+747 "KBFX-FM (Anchorage, Alaska)"
+748 "KENI-AM (Anchorage, Alaska)"
+749 "KGOT-FM (Anchorage, Alaska)"
+750 "KTZN-AM (Anchorage, Alaska)"
+751 "KYMG-FM (Anchorage, Alaska)"
+752 "KAKQ-FM (Fairbanks, Alaska)"
+753 "KIAK-AM (Fairbanks, Alaska)"
+754 "KIAK-FM (Fairbanks, Alaska)"
+755 "KKED-FM (Fairbanks, Alaska)"
+756 "KESZ-FM (Phoenix, Arizona)"
+757 "KMXP-FM (Phoenix, Arizona)"
+758 "KNIX-FM (Phoenix, Arizona)"
+759 "KZZP-FM (Phoenix, Arizona)"
+760 "KFYI-AM (Phoenix, Arizona)"
+761 "KGME-FM (Phoenix, Arizona)"
+762 "KOY-AM (Phoenix, Arizona)"
+763 "KYOT-FM (Phoenix, Arizona)"
+764 "KCEE-AM (Tucson, Arizona)"
+765 "KNST-AM (Tucson, Arizona)"
+766 "KRQQ-FM (Tucson, Arizona)"
+767 "KWFM-FM (Tucson, Arizona)"
+768 "KBLU-AM (Yuma, Arizona)"
+769 "KTTI-FM (Yuma, Arizona)"
+770 "KYJT-FM (Yuma, Arizona)"
+771 "KDDK-FM (Little Rock, Arkansas)"
+772 "KMJX-FM (Little Rock, Arkansas)"
+773 "KOLL-FM (Little Rock, Arkansas)"
+774 "KQAR-FM (Little Rock, Arkansas)"
+775 "KSSN-FM (Little Rock, Arkansas)"
+776 "KEZA-FM (Fayetteville, Arkansas)"
+777 "KJEM-FM (Fayetteville, Arkansas)"
+778 "KKIX-FM (Fayetteville, Arkansas)"
+779 "KMXF-FM (Fayetteville, Arkansas)"
+780 "KMAG-FM (Ft. Smith, Arkansas)"
+781 "KWHN-AM (Ft. Smith, Arkansas)"
+782 "KZBB-FM (Ft. Smith, Arkansas)"
+783 "KKBD-FM (Ft. Smith, Arkansas)"
+784 "KEZY-AM (Anaheim, California)"
+785 "KSPE-FM (Ellwood, California)"
+786 "KAVL-AM/FM (Lancaster, California)"
+787 "KAVS-FM (Lancaster, California)"
+788 "KYHT-FM (Lancaster, California)"
+789 "KACD-FM (Los Angeles, California)"
+790 "KAVL-AM (Los Angeles, California)"
+791 "KAVS-FM (Los Angeles, California)"
+792 "KIIS-FM (Los Angeles, California)"
+793 "KBCD-FM (Los Angeles, California)"
+794 "KXTA-AM (Los Angeles, California)"
+795 "KOST-FM (Los Angeles, California)"
+796 "KFI-AM (Los Angeles, California)"
+797 "KYSR-FM (Los Angeles, California)"
+798 "KBIG-FM (Los Angeles, California)"
+799 "KCMG-FM (Los Angeles, California)"
+800 "KLAC-AM (Los Angeles, California)"
+801 "KDON-AM/FM (Monterey, California)"
+802 "KOCN-FM (Monterey, California)"
+803 "KRQC-FM (Monterey, California)"
+804 "KTOM-AM/FM (Monterey, California)"
+805 "KCKC-AM (San Bernardino, California)"
+806 "KGB-FM (San Diego, California)"
+807 "KHTS-FM (San Diego, California)"
+808 "KIOZ-FM (San Diego, California)"
+809 "KJQY-FM (San Diego, California)"
+810 "KMSX-FM (San Diego, California)"
+811 "KOGO-AM (San Diego, California)"
+812 "KPOP-AM (San Diego, California)"
+813 "KSDO-AM (San Diego, California)"
+814 "XHRM-FM (San Diego, California)"
+815 "XTRA-FM (San Diego, California)"
+816 "KXJO-FM (San Francisco, California)"
+817 "KCNL-FM (San Jose, California)"
+818 "KFJO-FM (San Jose, California)"
+819 "KLDZ-FM (San Jose, California)"
+820 "KSJO-FM (San Jose, California)"
+821 "KUFX-FM (San Jose, California)"
+822 "KIST-FM (Santa Barbara, California)"
+823 "KSBL-FM (Santa Barbara, California)"
+824 "KTMS-AM (Santa Barbara, California)"
+825 "KTYD-FM (Santa Barbara, California)"
+826 "KXXT-AM (Santa Barbara, California)"
+827 "KBET-AM (Santa Clarita, California)"
+828 "KLYF-AM (Thousand Oaks, California)"
+829 "KFJO-FM (Walnut Creek, California)"
+830 "KYHT-FM (Yermo, California)"
+831 "KBCO-FM (Denver, Colorado)"
+832 "KBPI-FM (Denver, Colorado)"
+833 "KHIH-FM (Denver, Colorado)"
+834 "KHOW-AM (Denver, Colorado)"
+835 "KOA-AM (Denver, Colorado)"
+836 "KRFZ-FM (Denver, Colorado)"
+837 "KTCL-FM (Denver, Colorado)"
+838 "KTLK-AM (Denver, Colorado)"
+839 "KCOL-AM (Fort Collins, Colorado)"
+840 "KGLL-FM (Fort Collins, Colorado)"
+841 "KIIX-AM (Fort Collins, Colorado)"
+842 "KPAW-FM (Fort Collins, Colorado)"
+843 "WAVZ-AM (New Haven, Connecticut)"
+844 "WELI-AM (New Haven, Connecticut)"
+845 "WKCI-FM (New Haven, Connecticut)"
+846 "WGNE-FM (Daytona Beach, Florida)"
+847 "WAIL-FM (Florida Keys)"
+848 "WAVK-FM (Florida Keys)"
+849 "WCTH-FM (Florida Keys)"
+850 "WEOW-FM (Florida Keys)"
+851 "WFKZ-FM (Florida Keys)"
+852 "WKEZ-AM/FM (Florida Keys)"
+853 "WKWF-AM (Florida Keys)"
+854 "WCKT-FM (Ft. Myers/Naples, Florida)"
+855 "WOLZ-FM (Ft. Myers/Naples, Florida)"
+856 "WQNU-FM (Ft. Myers/Naples, Florida)"
+857 "WOST-FM (Ft. Myers/Naples, Florida)"
+858 "WFSJ-FM (Jacksonville, Florida)"
+859 "WJBT-FM (Jacksonville, Florida)"
+860 "WJGR-AM (Jacksonville, Florida)"
+861 "WNZS-AM (Jacksonville, Florida)"
+862 "WPLA-FM (Jacksonville, Florida)"
+863 "WQIK-FM (Jacksonville, Florida)"
+864 "WROO-FM (Jacksonville, Florida)"
+865 "WSOL-FM (Jacksonville, Florida)"
+866 "WZNZ-AM (Jacksonville, Florida)"
+867 "WBGG-FM (Miami/Ft. Lauderdale, Florida)"
+868 "WHYI-FM (Miami/Ft. Lauderdale, Florida)"
+869 "WINZ-AM (Miami/Ft. Lauderdale, Florida)"
+870 "WIOD-AM (Miami/Ft. Lauderdale, Florida)"
+871 "WLVE-FM (Miami/Ft. Lauderdale, Florida)"
+872 "WMGE-FM (Miami/Ft. Lauderdale, Florida)"
+873 "WZTA-FM (Miami/Ft. Lauderdale, Florida)"
+874 "WJRR-FM (Orlando, Florida)"
+875 "WMGF-FM (Orlando, Florida)"
+876 "WQTM-AM (Orlando, Florida)"
+877 "WSHE-FM (Orlando, Florida)"
+878 "WTKS-FM (Orlando, Florida)"
+879 "WWNZ-AM (Orlando, Florida)"
+880 "WDIZ-AM (Panama City, Florida)"
+881 "WFSY-FM (Panama City, Florida)"
+882 "WPAP-FM (Panama City, Florida)"
+883 "WPBH-FM (Panama City, Florida)"
+884 "WPPT-FM(Panama City, Florida)"
+885 "WTKX-FM (Pensacola, Florida)"
+886 "WCCF-AM (Rock Punta Gorda, Florida)"
+887 "WCVU-FM (Rock Punta Gorda, Florida)"
+888 "WIKX-FM (Rock Punta Gorda, Florida)"
+889 "WKII-AM (Rock Punta Gorda, Florida)"
+890 "WAMR-AM (Sarasota, Florida)"
+891 "WCTQ-FM (Sarasota, Florida)"
+892 "WDDV-FM (Sarasota, Florida)"
+893 "WSPB-AM (Sarasota, Florida)"
+894 "WSRZ-FM (Sarasota, Florida)"
+895 "WYNF-FM (Sarasota, Florida)"
+896 "WTLY-FM (Tallahassee, Florida)"
+897 "WNLS-AM (Tallahassee, Florida)"
+898 "WOKL-FM (Tallahassee, Florida)"
+899 "WTNT-FM (Tallahassee, Florida)"
+900 "WXSR FM (Tallahassee, Florida)"
+901 "WMTX-FM (Tampa/St. Petersburg, Florida)"
+902 "WDAE-AM (Tampa/St. Petersburg, Florida)"
+903 "WFLA-AM (Tampa/St. Petersburg, Florida)"
+904 "WFLZ-FM (Tampa/St. Petersburg, Florida)"
+905 "WHNZ-AM (Tampa/St. Petersburg, Florida)"
+906 "WSSR-FM (Tampa/St. Petersburg, Florida)"
+907 "WTBT-FM (Tampa/St. Petersburg, Florida)"
+908 "WXTB-FM (Tampa/St. Petersburg, Florida)"
+909 "WBZT AM (West Palm Beach, Florida)"
+910 "WIRA-AM (West Palm Beach, Florida)"
+911 "WJNO AM (West Palm Beach, Florida)"
+912 "WJNX-AM (West Palm Beach, Florida)"
+913 "WKGR FM (West Palm Beach, Florida)"
+914 "WLDI-FM (West Palm Beach, Florida)"
+915 "WOLL-FM (West Palm Beach, Florida)"
+916 "WWLV-FM (West Palm Beach, Florida)"
+917 "WCOH-AM (Atlanta, Georgia)"
+918 "WGSE-AM (Atlanta, Georgia)"
+919 "WGST-AM/FM (Atlanta, Georgia)"
+920 "WKLS-FM (Atlanta, Georgia)"
+921 "WMAX-FM (Atlanta, Georgia)"
+922 "WMKJ-FM (Atlanta, Georgia)"
+923 "WPCH-FM (Atlanta, Georgia)"
+924 "WHEL-FM (Helen, Georgia)"
+925 "WMXY-AM (Hogansville, Georgia)"
+926 "WZLG-FM (Hogansville, Georgia)"
+927 "KARO-FM (Boise, Idaho)"
+928 "KCIX-FM (Boise, Idaho)"
+929 "KFXD-AM (Boise, Idaho)"
+930 "KIDO-AM (Boise, Idaho)"
+931 "KLTB-FM (Boise, Idaho)"
+932 "KXLT-FM (Boise, Idaho)"
+933 "KID-AM/FM (Idaho Falls, Idaho)"
+934 "KLLP-FM (Pocatello, Idaho)"
+935 "KPKY-FM (Pocatello, Idaho)"
+936 "KWIK-AM (Pocatello, Idaho)"
+937 "KEZJ-FM (Twin Falls, Idaho)"
+938 "KLIX-AM/FM (Twin Falls, Idaho)"
+939 "KBUR-AM (Burlington, Iowa)"
+940 "KGRS-FM (Burlington, Iowa)"
+941 "WMT-AM/FM (Cedar Rapids, Iowa)"
+942 "WHO-AM (Des Moines, Iowa)"
+943 "KKDM-FM (Des Moines, Iowa)"
+944 "KLYF-FM (Des Moines, Iowa)"
+945 "KMXD-FM (Des Moines, Iowa)"
+946 "KCCQ-FM (Des Moines, Iowa)"
+947 "KASI-AM (Des Moines, Iowa)"
+948 "KKEZ-FM (Fort Dodge, Iowa)"
+949 "KWMT-AM (Fort Dodge, Iowa)"
+950 "KBKB-AM/FM (Fort Madison, Iowa)"
+951 "KKRQ-FM (Iowa City, Iowa)"
+952 "KXIC-AM (Iowa City, Iowa)"
+953 "WBUL-FM (Lexington, Kentucky)"
+954 "WKQQ-FM (Lexington, Kentucky)"
+955 "WLAP-AM (Lexington, Kentucky)"
+956 "WLKT-FM (Lexington, Kentucky)"
+957 "WMXL-FM (Lexington, Kentucky)"
+958 "WTKT-AM (Lexington, Kentucky)"
+959 "WHAS-AM (Louisville, Kentucky)"
+960 "WAMZ-FM (Louisville, Kentucky)"
+961 "WQMF-FM (Louisville, Kentucky)"
+962 "WTFX-FM (Louisville, Kentucky)"
+963 "WWKY-AM (Louisville, Kentucky)"
+964 "WKJK- AM (Louisville, Kentucky)"
+965 "WYBL-FM (Louisville, Kentucky)"
+966 "WZTR-FM (Louisville, Kentucky)"
+967 "WBTF-FM (Midway, Kentucky)"
+968 "KKND-FM (New Orleans, Louisiana)"
+969 "KUMX-FM (New Orleans, Louisiana)"
+970 "WNOE-FM (New Orleans, Louisiana)"
+971 "WODT-AM (New Orleans, Louisiana)"
+972 "WQUE-FM (New Orleans, Louisiana)"
+973 "WYLD-AM/FM (New Orleans, Louisiana)"
+974 "WYLD-FM (New Orleans, Louisiana)"
+975 "KEEL-AM (Shreveport, Louisiana)"
+976 "KITT-FM (Shreveport, Louisiana)"
+977 "KRUF-FM (Shreveport, Louisiana)"
+978 "KVKI-FM (Shreveport, Louisiana)"
+979 "KWKH-AM (Shreveport, Louisiana)"
+980 "WCAO-AM (Baltimore, Maryland)"
+981 "WOCT-FM (Baltimore, Maryland)"
+982 "WPOC-FM (Baltimore, Maryland)"
+983 "WSRS-FM (Worcester, Massachusetts)"
+984 "WTAG-AM (Worcester, Massachusetts)"
+985 "WHYN-AM/FM (Springfield, Massachusetts)"
+986 "WNNZ-AM (Springfield, Massachusetts)"
+987 "WBCT-AM (Grand Rapids, Michigan)"
+988 "WCUZ-FM (Grand Rapids, Michigan)"
+989 "WOOD-AM/FM (Grand Rapids, Michigan)"
+990 "WTKG-AM (Grand Rapids, Michigan)"
+991 "WVTI-FM (Grand Rapids, Michigan)"
+992 "WSNX-FM (Grand Rapids, Michigan)"
+993 "WJMI-FM (Jackson, Missisppi)"
+994 "WKXI-AM/FM (Jackson, Missisppi)"
+995 "WOAD-AM (Jackson, Missisppi)"
+996 "WYJS-FM (Jackson, Missisppi)"
+997 "KATZ-AM/FM (St. Louis, Missouri)"
+998 "KLOU-FM (St. Louis, Missouri)"
+999 "KMJM-FM (St. Louis, Missouri)"
+*arcs
+1       37
+1       38
+1       39
+1       40
+1       41
+1       42
+1       43
+1       44
+1       45
+1       46
+46      47
+1       48
+1       49
+1       50
+1       51
+1       52
+1       53
+53      54
+53      55
+53      56
+53      57
+53      58
+53      59
+53      60
+53      61
+53      62
+1       63
+1       64
+64      65
+64      66
+64      67
+64      68
+64      69
+64      70
+64      71
+64      73
+64      74
+64      75
+64      76
+64      77
+64      78
+64      79
+64      80
+64      81
+64      82
+64      83
+64      84
+64      85
+85      86
+64      87
+1       88
+88      89
+88      90
+88      72
+88      91
+88      92
+88      93
+88      94
+88      95
+88      96
+88      97
+88      98
+88      99
+88      100
+1       177
+1       102
+1       103
+1       104
+129     130
+129     131
+139     140
+139     141
+139     142
+4       170
+4       164
+4       167
+170     177
+171     174
+171     173
+170     175
+170     220
+170     238
+170     239
+170     246
+170     247
+170     265
+170     274
+170     280
+170     281
+170     282
+170     176
+170     329
+170     332
+170     330
+163     334
+170     337
+170     331
+170     221
+170     224
+170     225
+170     226
+170     227
+170     228
+170     229
+170     230
+170     231
+170     232
+170     233
+170     234
+170     235
+170     236
+170     237
+170     240
+170     241
+170     242
+170     244
+170     245
+170     195
+247     248
+247     249
+247     250
+247     251
+247     252
+170     253
+247     254
+247     255
+247     256
+247     257
+247     258
+247     259
+247     260
+247     261
+247     262
+247     263
+170     264
+170     23
+265     266
+265     267
+265     268
+265     269
+265     270
+265     271
+265     272
+265     273
+170     291
+170     297
+32      298
+4       309
+35      310
+4       310
+4       311
+4       312
+4       313
+4       314
+4       315
+4       316
+4       318
+4       319
+4       320
+4       321
+4       322
+4       323
+4       324
+4       325
+4       327
+4       328
+170     275
+8       275
+275     276
+275     277
+275     278
+275     279
+32      300
+177     183
+177     203
+170     317
+170     336
+170     326
+170     335
+170     286
+170     288
+471     485
+491     492
+491     493
+491     494
+6       495
+6       497
+6       498
+6       499
+6       500
+6       501
+6       502
+6       504
+6       505
+6       471
+471     472
+471     474
+3       145
+3       146
+3       147
+3       148
+3       150
+3       151
+275     151
+3       153
+3       154
+3       155
+3       156
+3       157
+3       158
+3       159
+3       160
+30      176
+4       307
+15      307
+170     308
+5       338
+338     339
+338     340
+338     341
+338     342
+338     343
+338     344
+338     345
+338     346
+338     347
+5       348
+348     349
+348     350
+348     351
+5       352
+352     353
+352     354
+352     355
+352     356
+352     357
+352     358
+352     359
+352     360
+352     361
+352     362
+352     363
+352     364
+352     365
+352     366
+352     367
+5       368
+5       369
+5       370
+5       371
+5       372
+5       373
+5       374
+5       375
+5       376
+5       377
+5       378
+5       379
+5       380
+5       381
+5       382
+5       383
+5       384
+5       385
+5       386
+5       387
+5       388
+5       389
+5       390
+5       391
+5       392
+5       393
+5       394
+5       395
+5       396
+5       397
+5       398
+5       399
+5       400
+10      388
+5       401
+5       402
+5       403
+5       404
+5       405
+5       406
+5       407
+5       408
+408     409
+408     410
+408     411
+408     412
+408     413
+408     414
+408     415
+408     416
+408     417
+408     418
+408     419
+408     420
+408     421
+408     422
+5       423
+5       424
+5       425
+5       426
+5       427
+5       428
+5       429
+5       430
+5       431
+5       432
+5       433
+5       434
+5       435
+5       436
+5       437
+5       438
+5       439
+5       440
+5       441
+5       442
+5       443
+443     444
+443     445
+443     446
+443     447
+443     448
+443     449
+443     450
+443     451
+443     452
+443     453
+443     454
+443     455
+443     456
+443     457
+443     458
+443     459
+443     460
+443     461
+443     462
+443     463
+443     464
+443     465
+6       466
+6       467
+6       468
+6       469
+6       470
+471     475
+471     476
+476     477
+476     478
+476     479
+476     481
+471     483
+471     484
+33      171
+7       506
+7       507
+7       508
+7       509
+7       510
+7       511
+7       512
+7       513
+7       514
+7       515
+7       516
+7       517
+7       518
+7       519
+7       520
+7       521
+7       522
+7       523
+7       524
+7       525
+7       526
+7       527
+7       528
+7       530
+7       531
+7       532
+7       533
+7       534
+7       535
+7       536
+7       537
+7       538
+7       539
+7       540
+7       541
+7       542
+7       543
+7       544
+7       545
+7       546
+7       547
+7       548
+7       549
+7       550
+7       551
+7       552
+7       553
+7       554
+7       555
+7       556
+7       557
+7       558
+7       559
+7       560
+7       561
+7       562
+7       564
+7       565
+7       566
+7       567
+7       568
+7       569
+7       570
+7       571
+7       572
+7       573
+7       574
+7       575
+7       576
+7       577
+7       578
+7       579
+7       580
+7       581
+7       582
+7       583
+7       584
+7       585
+7       586
+7       587
+7       588
+7       589
+7       590
+7       591
+7       592
+7       593
+7       594
+7       595
+7       596
+7       597
+7       598
+7       599
+7       600
+7       601
+7       602
+7       603
+7       604
+7       605
+7       606
+7       607
+7       608
+7       609
+609     610
+7       611
+7       612
+7       613
+7       614
+7       615
+7       616
+7       617
+7       618
+7       619
+7       622
+7       623
+7       624
+7       625
+7       626
+7       627
+7       628
+7       629
+7       630
+7       631
+7       632
+7       633
+7       634
+7       635
+7       636
+7       637
+7       638
+7       639
+7       640
+7       641
+7       642
+7       643
+7       644
+7       645
+7       646
+7       647
+7       648
+7       649
+7       650
+7       651
+7       652
+7       653
+7       654
+7       655
+7       656
+7       657
+7       658
+7       659
+7       660
+7       661
+7       662
+7       663
+7       664
+7       665
+7       666
+7       667
+7       668
+7       669
+7       670
+7       671
+7       672
+7       673
+7       674
+7       675
+7       676
+7       677
+7       678
+7       679
+7       680
+7       681
+7       682
+7       683
+7       684
+7       685
+7       686
+7       687
+7       688
+7       689
+7       690
+7       691
+7       692
+7       693
+7       694
+7       695
+7       696
+7       697
+7       698
+7       699
+7       700
+7       701
+7       702
+7       703
+7       704
+7       705
+7       706
+7       707
+7       708
+7       709
+7       710
+7       711
+7       712
+7       713
+7       714
+7       715
+7       717
+7       718
+7       719
+7       720
+8       8
+8       220
+10      220
+23      237
+23      389
+23      497
+23      498
+4       163
+4       161
+8       166
+163     166
+9       166
+170     32
+471     6
+4       8
+4       166
+3       30
+4       289
+6       475
+6       476
+8       170
+8       30
+170     30
+170     289
+32      303
+15      317
+6       4
+6       491
+23      289
+163     275
+163     289
+335     222
